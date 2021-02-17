@@ -120,14 +120,14 @@ source ~/.rit_completion​
 &lt;li>If he &lt;strong>wants to add the community&lt;/strong> formulas locally.&lt;/li>
 &lt;li>If he &lt;strong>wants the default&lt;/strong> &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-run-formulas/">&lt;strong>formula execution method&lt;/strong>&lt;/a> &lt;strong>to be local or through docker.&lt;/strong>&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/rit-init%20%283%29%20%281%29.gif" alt="rit init command">&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/rit-init%20%283%29%20%281%29.gif" alt="">&lt;/p>
 &lt;p>Then, the command execution will create all the necessary configuration&amp;rsquo;s files.&lt;/p>
 &lt;h2 id="step-2-verify-initialization">Step 2: Verify Initialization&lt;/h2>
 &lt;h3 id="1-commons-repository">1. Commons repository&lt;/h3>
 &lt;p>If you added the community formulas repository, you can check it by using the following command:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit list repo
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>This command will return all formulas repositories the user has access locally.&lt;/p>
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-1448x466-.gif" alt="rit list repo command">&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-1448x466-.gif" alt="">&lt;/p>
 &lt;h3 id="2-ritchie-folder">2. Ritchie folder&lt;/h3>
 &lt;p>You can then check the &lt;strong>&lt;code>.rit&lt;/code>&lt;/strong> folder has been created on your &lt;strong>&lt;code>$HOME&lt;/code>&lt;/strong> directory.&lt;/p>
 &lt;div class="alert alert-info" role="alert">
