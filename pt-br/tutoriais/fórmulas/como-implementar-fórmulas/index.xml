@@ -312,7 +312,11 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &amp;#34;mismatchText&amp;#34;: &amp;#34;Only a integer value is allowed here (ex: 20)&amp;#34;
 }
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
+O tipo de &lt;strong>&lt;code>entrada dinâmico&lt;/code>&lt;/strong> será &lt;strong>depreciado&lt;/strong> nas &lt;strong>próximas liberações&lt;/strong>.
+&lt;/div>
+&lt;ul>
 &lt;li>
 &lt;p>&lt;code>requestInfo&lt;/code>: configuração para ter o parâmetro de entrada de tipo dinâmico.&lt;/p>
 &lt;ul>

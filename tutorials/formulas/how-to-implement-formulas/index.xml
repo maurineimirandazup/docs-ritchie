@@ -305,7 +305,11 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &amp;#34;mismatchText&amp;#34;: &amp;#34;Only a integer value is allowed here (ex: 20)&amp;#34;
 }
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
+The &lt;strong>&lt;code>dynamic input&lt;/code>&lt;/strong> type will be &lt;strong>depreciated&lt;/strong> in the &lt;strong>next releases&lt;/strong>.
+&lt;/div>
+&lt;ul>
 &lt;li>&lt;code>requestInfo&lt;/code>: configuration to get dynamic input type.
 &lt;ul>
 &lt;li>&lt;code>url&lt;/code>: URL to consume a GET service that will return a list of objects.&lt;/li>
