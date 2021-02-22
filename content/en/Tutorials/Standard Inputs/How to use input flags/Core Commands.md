@@ -17,6 +17,20 @@ This flags are supported since Ritchie's 2.8 release.
 
 ### Available flags
 
+### Configuration commands
+
+rit tutorial
+
+```text
+rit tutorial --enabled=true
+```
+
+rit set formula-runner
+
+```text
+rit set formula-runner --runner=docker|local
+```
+
 ### Credentials commands
 
 rit set credential 
@@ -52,3 +66,9 @@ rit add repo
 ```text
 rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
 ```
+
+{{% alert color="info" %}}
+
+When the version flag is not passed, ritchie automatically searches for the latest version
+
+{{% /alert %}} 
