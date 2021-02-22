@@ -37,7 +37,7 @@ Todos os templates de formulas contém um arquivo &lt;strong>DockerFile&lt;/stro
 Premissa: Depois de finalizar os passos anteriores - instalação e inicialização -, para acessar a fórmula hello world para testar o Ritchie, será necessário adicionar o repositório &lt;a href="https://github.com/ZupIT/ritchie-formulas-demo">&lt;strong>ritchie-formulas-demo&lt;/strong>&lt;/a> localmente.
 {{% /alert %}}&lt;/p>
 &lt;p>Para fazer isso, você pode usar o comando &lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong> , ou executar a linha de comando abaixo:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;demo&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas-demo&amp;#34;, &amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit add repo --provider=Github --name=demo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
 É possível ainda verificar os repositórios estão sendo usados executando o comando &lt;strong>&lt;code>rit list repo&lt;/code>&lt;/strong>.
 {{% /alert %}}&lt;/p>
@@ -985,9 +985,9 @@ Será necessário adaptar o valor das variáveis para cada JSON retornar os resu
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;tutorial&amp;#34;:&amp;#34;enabled&amp;#34;}&amp;#39; | rit tutorial --stdin
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="comandos-do-repo">Comandos do Repo&lt;/h3>
 &lt;p>rit add repo&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas&amp;#34;, &amp;#34;token&amp;#34;: null, &amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;repoU&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas&amp;#34;, &amp;#34;token&amp;#34;: null, &amp;#34;priority&amp;#34;:1, &amp;#34;tag&amp;#34;=&amp;#34;2.2.0&amp;#34;}&amp;#39; | rit add repo --stdin
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>rit update repo&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;}&amp;#39; | rit update repo --stdin
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;tag&amp;#34;:&amp;#34;2.2.0&amp;#34;}&amp;#39; | rit update repo --stdin
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>rit delete repo&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;}&amp;#39; | rit delete repo --stdin
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="comandos-de-fórmula">Comandos de fórmula&lt;/h3>
