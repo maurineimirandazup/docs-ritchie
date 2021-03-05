@@ -8,15 +8,15 @@
 &lt;/ol>
 &lt;p>Vale reforçar que &lt;strong>método de execução de fórmulas padrão&lt;/strong> é escolhido durante a etapa de inicialização do Ritchie com o comando &lt;strong>&lt;code>rit init&lt;/code>&lt;/strong>. Você pode alterar essa configuração executando o comando abaixo:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit set formula-runner
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-1374x404-.gif" alt="Comando rit set formula-runner">&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-1374x404-.gif" alt="">&lt;/p>
 &lt;h3 id="1-execução-local">1. Execução local&lt;/h3>
 &lt;p>Para executar uma fórmula localmente, é necessário ter instalada no computador a linguagem de programação que foi usada para desenvolver a fórmula.&lt;/p>
 &lt;p>Exemplo: uma fórmula desenvolvida em &lt;strong>Java&lt;/strong> precisará ter &lt;strong>Java instalado&lt;/strong> na máquina para ser executada localmente.&lt;/p>
 &lt;h3 id="2-execução-via-docker">2. Execução via Docker&lt;/h3>
 &lt;p>Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o &lt;strong>&lt;code>DOCKER&lt;/code>&lt;/strong> esteja instalado e iniciado.&lt;/p>
-&lt;p>{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
-Para ver melhor como essa execução funciona na prática, confira a &lt;a href="formula-hello-world">&lt;strong>seção fórmula hello world&lt;/strong> &lt;/a> para ver como isso funciona na prática.
-{{% /alert %}}&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+Para ver melhor como essa execução funciona na prática, confira a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/">&lt;strong>seção fórmula hello world&lt;/strong> &lt;/a> para ver como isso funciona na prática.
+&lt;/div>
 &lt;h3 id="3-local--docker-flags">3. Local &amp;amp; Docker Flags&lt;/h3>
 &lt;p>É possível forçar o Ritchie CLI a executar uma fórmula seguindo um método de execução específico, usando flags.&lt;/p>
 &lt;ul>
@@ -24,23 +24,24 @@ Para ver melhor como essa execução funciona na prática, confira a &lt;a href=
 &lt;li>A flag &lt;strong>&lt;code>--docker&lt;/code>&lt;/strong> executará a fórmula com Docker (se o método de execução padrão for local).&lt;/li>
 &lt;/ul>
 &lt;h3 id="4-containers-com-ritchie">4. Containers com Ritchie&lt;/h3>
-&lt;p>{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+&lt;div class="alert alert-warning" role="alert">
 Todos os templates de formulas contém um arquivo &lt;strong>DockerFile&lt;/strong> que cria um container com &lt;strong>Ritchie CLI&lt;/strong> instalado.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:&lt;/p>
-&lt;p>👉 Vá para página &lt;a href="formula-hello-world">&lt;strong>Fórmula Hello World&lt;/strong>&lt;/a> e descubra as diferentes maneiras de executar uma fórmula no Ritchie.&lt;/p>
-&lt;p>👉 Vá para página &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/">&lt;strong>como criar fórmulas&lt;/strong>&lt;/a> para entender o passo a passo para criar sua primeira automação usando o Ritchie.&lt;/p></description></item><item><title>Como: Fórmula "Hello World"</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</guid><description>
+&lt;p>👉 Vá para página &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/">&lt;strong>Fórmula Hello World&lt;/strong>&lt;/a> e descubra as diferentes maneiras de executar uma fórmula no Ritchie.&lt;/p>
+&lt;p>👉 Vá para página &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/">&lt;strong>como criar fórmulas&lt;/strong>&lt;/a> para entender o passo a passo para criar sua primeira automação usando o Ritchie.&lt;/p></description></item><item><title>Como: Fórmula "Hello World"</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</guid><description>
 &lt;hr>
 &lt;h2 id="hello-world">Hello World&lt;/h2>
-&lt;p>{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+&lt;div class="alert alert-info" role="alert">
 Premissa: Depois de finalizar os passos anteriores - instalação e inicialização -, para acessar a fórmula hello world para testar o Ritchie, será necessário adicionar o repositório &lt;a href="https://github.com/ZupIT/ritchie-formulas-demo">&lt;strong>ritchie-formulas-demo&lt;/strong>&lt;/a> localmente.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;p>Para fazer isso, você pode usar o comando &lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong> , ou executar a linha de comando abaixo:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit add repo --provider=Github --name=demo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-info" role="alert">
 É possível ainda verificar os repositórios estão sendo usados executando o comando &lt;strong>&lt;code>rit list repo&lt;/code>&lt;/strong>.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;p>Agora que você adicionou o repositório de demo, você pode executar os comandos desse tutorial.&lt;/p>
 &lt;h2 id="premissa-confira-os-detalhes-da-fórmula">Premissa: Confira os detalhes da fórmula&lt;/h2>
 &lt;p>Para obter os detalhes de uso de uma fórmula, é possível executar o comando usando a flag &lt;strong>&lt;code>--help&lt;/code>&lt;/strong>.&lt;/p>
@@ -57,9 +58,9 @@ Premissa: Depois de finalizar os passos anteriores - instalação e inicializaç
 &lt;/ol>
 &lt;p>Para isso, escreva um dos comandos abaixo:&lt;/p>
 &lt;h3 id="caso-1-usando-prompt">Caso 1: Usando Prompt&lt;/h3>
-&lt;p>{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+&lt;div class="alert alert-info" role="alert">
 Como essa fórmula foi desenvolvida usando Golang, é preciso ter Golang instalado para conseguir executá-la localmente.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit demo hello-world
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:&lt;/p>
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-1054x366-.gif" alt="">&lt;/p>
@@ -67,10 +68,11 @@ Como essa fórmula foi desenvolvida usando Golang, é preciso ter Golang instala
 &lt;h3 id="caso-2-usando-prompt--docker">Caso 2: Usando Prompt &amp;amp; Docker&lt;/h3>
 &lt;p>Você pode rodar o mesmo comando usando a flag &lt;strong>&amp;ndash;docker&lt;/strong> para executar a fórmula remotamente (em um container), mas ainda informando os parâmetros de entrada via &lt;strong>prompt&lt;/strong>:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit demo hello-world --docker
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
 O Docker precisa estar instalado e iniciado para conseguir executar comandos usando essa flag.
 Nesse caso, não é necessário ter Golang instalado.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;h3 id="caso-3-usando-input-flags">Caso 3: Usando Input Flags&lt;/h3>
 &lt;p>Você também pode executar o comando informando as entradas por meio de flags (você pode saber quais flags estão disponíveis usando a flag &lt;strong>&lt;code>--help&lt;/code>&lt;/strong> ao executar um comando). Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie
@@ -80,23 +82,25 @@ Nesse caso, não é necessário ter Golang instalado.
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="caso-5-usando-stdin">Caso 5: Usando Stdin&lt;/h3>
 &lt;p>É também possível executar comando usando a flag &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong> (Standard Input). Dessa maneira, os parâmetros de entrada podem ser informados diretamente na linha de comando inicial:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
 Ritchie usa o formato &lt;strong>JSON&lt;/strong> para executar comandos STDIN.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;h3 id="caso-6-usando-stdin">Caso 6: Usando Stdin&lt;/h3>
 &lt;p>Quando são usadas as 2 flags &amp;ndash;stdin e &amp;ndash;docker, é possível executar o comando remotamente informando os parâmetros de entrada na linha de comando inicial, sem necessidade de ação humana:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin --docker
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-info" role="alert">
 Dê uma olhada nas fórmulas da comunidade &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>(ex: ritchie-formulas)&lt;/strong>&lt;/a>.
 A maioria das fórmulas tem um arquivo &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world">&lt;strong>README&lt;/strong>&lt;/a> explicando como executar a fórmula e para que ela serve.
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;p>Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar aprendendo:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Confira agora as fórmulas que você tem acesso usando o comando:&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Veja como &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/">&lt;strong>criar suas fórmulas&lt;/strong> &lt;/a>.&lt;/p>
+&lt;p>Veja como &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/">&lt;strong>criar suas fórmulas&lt;/strong> &lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul></description></item><item><title>Como: Criar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/</guid><description>
 &lt;hr>
@@ -140,8 +144,8 @@ A maioria das fórmulas tem um arquivo &lt;a href="https://github.com/ZupIT/ritc
 ]
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nessa seção, você viu como criar e testar uma fórmula no Ritchie. Para continuar configurando a fórmula:&lt;/p>
-&lt;p>👉 Vá para a seção de como&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/"> &lt;strong>implementar uma fórmula&lt;/strong>&lt;/a> para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.&lt;/p>
-&lt;p>👉 Vá para &lt;a href="como-buildar-formulas">&lt;strong>como fazer o build da fórmula&lt;/strong>&lt;/a> para ver como continuar os testes nas fórmulas que você criou.&lt;/p></description></item><item><title>Como: Organizar a pasta de fórmula</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/organizar-a-pasta-de-f%C3%B3rmula/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/organizar-a-pasta-de-f%C3%B3rmula/</guid><description>
+&lt;p>👉 Vá para a seção de como&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/organizar-a-pasta-de-f%C3%B3rmula/"> &lt;strong>organizar uma pasta de fórmula&lt;/strong>&lt;/a> para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.&lt;/p>
+&lt;p>👉 Vá para &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas">&lt;strong>como fazer o build da fórmula&lt;/strong>&lt;/a> para ver como continuar os testes nas fórmulas que você criou.&lt;/p></description></item><item><title>Como: Organizar a pasta de fórmula</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/organizar-a-pasta-de-f%C3%B3rmula/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/organizar-a-pasta-de-f%C3%B3rmula/</guid><description>
 &lt;hr>
 &lt;h2 id="o-que-é-uma-pasta-de-fórmula-formula-folder">O que é uma pasta de fórmula (formula folder)?&lt;/h2>
 &lt;p>Esta pasta contém arquivos com comportamento da fórmula.&lt;/p>
@@ -704,7 +708,24 @@ xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 https://maven.apa
 &lt;/code>&lt;/pre>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>Como: Publicar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/publicar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/publicar-f%C3%B3rmulas/</guid><description>
+&lt;/div></description></item><item><title>Como: Buildar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas/</guid><description>
+&lt;hr>
+&lt;div class="alert alert-danger" role="alert">
+Essa funcionalidade não está mais disponível a partir da &lt;strong>versão 2.5.0 do Ritchie.&lt;/strong> Isso porque o build da fórmula é feito de maneira automática: um repositório local criado assim que você implementa a fórmula
+Caso esteja usando uma versão anterior, basta seguir as orientações desta seção.
+&lt;/div>
+&lt;h2 id="como-buildar">Como &amp;ldquo;buildar&amp;rdquo;?&lt;/h2>
+&lt;p>Depois de &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/">&lt;strong>criar uma formula&lt;/strong>&lt;/a>, e você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação.&lt;/p>
+&lt;p>Para isso, basta executar o comando:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit build formula
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Você deverá informar:&lt;/p>
+&lt;ul>
+&lt;li>O caminho do diretório onde a fórmula está localizada.&lt;/li>
+&lt;li>O caminho da fórmula a ser buildada (ele segue o comando da fórmula).&lt;/li>
+&lt;/ul>
+&lt;p>Caso queira atualizar o código da fórmula em tempo de execução, é possível utilizar a &lt;strong>flag “&amp;ndash;watch”&lt;/strong> junto da fórmula. Veja no exemplo abaixo:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit build formula --watch
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Como: Publicar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/publicar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/publicar-f%C3%B3rmulas/</guid><description>
 &lt;hr>
 &lt;h2 id="como-publicar">Como publicar?&lt;/h2>
 &lt;p>Existe uma fórmula no Ritchie que permite você criar/atualizar o repositório de fórmulas no Github e/ou Gitblab.&lt;/p>
@@ -755,7 +776,7 @@ Como demonstrado acima, você pode checar se a publicação deu certo usando o c
 &lt;/ol>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
-&lt;p>👉 Veja a seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/">&lt;strong>como compartilhar fórmulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Como: Compartilhar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/</guid><description>
+&lt;p>👉 Veja a seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/">&lt;strong>como compartilhar fórmulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Como: Compartilhar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/</guid><description>
 &lt;hr>
 &lt;h2 id="como-compartilhar">Como compartilhar?&lt;/h2>
 &lt;p>Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas.&lt;/p>
@@ -799,7 +820,7 @@ xcode Manage xcode objects
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit update repo
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
-&lt;p>👉 Vá para página &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/credenciais/como-definir-credenciais/">&lt;strong>manipular credenciais&lt;/strong>&lt;/a> e veja como rodar esse comando com suas fórmulas.&lt;/p>
+&lt;p>👉 Vá para página &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/credenciais/definir-credenciais/">&lt;strong>manipular credenciais&lt;/strong>&lt;/a> e veja como rodar esse comando com suas fórmulas.&lt;/p>
 &lt;p>👉 Vá para página de &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/">&lt;strong>lista de comandos&lt;/strong>&lt;/a> para ver as automações disponíveis no repositório da nossa comunidade.&lt;/p></description></item><item><title>Como: Apagar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/apagar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/apagar-f%C3%B3rmulas/</guid><description>
 &lt;hr>
 &lt;h2 id="como-apagar">Como apagar?&lt;/h2>
@@ -812,7 +833,7 @@ xcode Manage xcode objects
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/delete-formula.gif" alt="">&lt;/p>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nesta seção, você viu como apagar uma fórmula no Ritchie. Para continuar lendo mais:&lt;/p>
-&lt;p>👉 Vá para seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/">&lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a> para descobrir como se executa uma fórmula dentro de outra fórmula.&lt;/p>
+&lt;p>👉 Vá para seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/">&lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a> para descobrir como se executa uma fórmula dentro de outra fórmula.&lt;/p>
 &lt;p>👉 Conheça a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/">&lt;strong>lista de comandos&lt;/strong>&lt;/a> de fórmulas disponíveis no Ritchie.&lt;/p></description></item><item><title>Como: Encapsular fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/</guid><description>
 &lt;hr>
 &lt;h2 id="o-que-é-encapsulamento">O que é encapsulamento?&lt;/h2>
@@ -824,7 +845,7 @@ xcode Manage xcode objects
 &lt;p>Para realizar um encapsulamento de fórmula, é necessário usar &lt;strong>Standard Inputs&lt;/strong>. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:&lt;/p>
 &lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs/pt-br/tutoriais/standard-inputs">&lt;strong>Standard Inputs&lt;/strong>&lt;/a>&lt;/p>
 &lt;h3 id="2-execução">2. Execução&lt;/h3>
-&lt;p>Ao &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/">&lt;strong>implementar uma fórmula&lt;/strong>&lt;/a>, você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.&lt;/p>
+&lt;p>Ao &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/">&lt;strong>implementar uma fórmula&lt;/strong>&lt;/a>, você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.&lt;/p>
 &lt;p>A linha de comando da fórmula encapsulada deve ser executada utilizando &lt;strong>Standard Inputs&lt;/strong> e informando os seus parâmetros de entradas diretamente no código.&lt;/p>
 &lt;h3 id="3-exemplo">3. Exemplo&lt;/h3>
 &lt;p>A fórmula &lt;strong>&lt;code>rit publish repo&lt;/code>&lt;/strong> foi implementada usando o encapsulamento de fórmula. Inclusive, você pode encontrar no Github a &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/publish/repo">&lt;strong>implementação dessa fórmula&lt;/strong>&lt;/a>&lt;/p>
@@ -877,7 +898,7 @@ Add a new
 ✔ Github credential saved!
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-info" role="alert">
-Você pode conferir os &lt;a href="../../formulas/como-implementar-formulas/#arquivos-editaveis">&lt;strong>arquivos editáveis das fórmulas&lt;/strong>&lt;/a> para ver como &lt;strong>manipular as credenciais definidas na sessão como parâmetros de input&lt;/strong> das fórmulas (no caso, inputs no config.json).
+Você pode conferir os &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/">&lt;strong>arquivos editáveis das fórmulas&lt;/strong>&lt;/a> para ver como &lt;strong>manipular as credenciais definidas na sessão como parâmetros de input&lt;/strong> das fórmulas (no caso, inputs no config.json).
 &lt;/div></description></item><item><title>Como: Apagar credenciais</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/credenciais/apagar-credenciais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/credenciais/apagar-credenciais/</guid><description>
 &lt;hr>
 &lt;h2 id="como-apagar">Como apagar?&lt;/h2>
@@ -887,7 +908,7 @@ Você pode conferir os &lt;a href="../../formulas/como-implementar-formulas/#arq
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-814x408-.gif" alt="">&lt;/p>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:&lt;/p>
-&lt;p>👉 Vá para seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/">&lt;strong>como adicionar provedores&lt;/strong> &lt;/a>e, assim, continuar configurando suas credenciais.&lt;/p>
+&lt;p>👉 Vá para seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/credenciais/adicionar-provedores/">&lt;strong>como adicionar provedores&lt;/strong> &lt;/a> e, assim, continuar configurando suas credenciais.&lt;/p>
 &lt;p>👉 Conheça a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/">&lt;strong>lista de comandos&lt;/strong>&lt;/a> de fórmulas disponíveis no Ritchie.&lt;/p></description></item><item><title>Como: Adicionar provedores</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/credenciais/adicionar-provedores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/credenciais/adicionar-provedores/</guid><description>
 &lt;hr>
 &lt;p>É possível também configurar o Ritchie para adicionar novos provedores no seu espaço de trabalho. Para fazer isso, basta selecionar a opção &amp;ldquo;&lt;strong>Add a new&lt;/strong>&amp;rdquo; rodando o comando &lt;strong>&lt;code>rit set credential&lt;/code>&lt;/strong>.&lt;/p>
@@ -910,7 +931,7 @@ Esse provedor, assim como suas informações, serão salvas de forma permanente 
 &lt;/div></description></item><item><title>Como: Usar credenciais como parâmetros de entrada</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/credenciais/usar-credenciais-como-par%C3%A2metros-de-entrada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/credenciais/usar-credenciais-como-par%C3%A2metros-de-entrada/</guid><description>
 &lt;hr>
 &lt;p>Assim que você configurar as credenciais do provedor, poderá usá-la como parâmetro de entrada para o arquivo &lt;strong>&lt;code>config.json&lt;/code>&lt;/strong> das suas fórmulas.&lt;/p>
-&lt;p>Para fazer isso, basta usar a palavra-chave reservada:&lt;strong>&lt;code>CREDENTIAL&lt;/code>&lt;/strong>&lt;/p>
+&lt;p>Para fazer isso, basta usar a palavra-chave reservada: &lt;strong>&lt;code>CREDENTIAL&lt;/code>&lt;/strong>&lt;/p>
 &lt;p>Quando usada como parâmetro de entrada, a credencial terá 2 campos:&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>Name:&lt;/strong> Variável usada para extrair o parâmetro e manipulá-lo dentro do código da fórmula.&lt;/li>
@@ -919,7 +940,7 @@ Esse provedor, assim como suas informações, serão salvas de forma permanente 
 &lt;div class="alert alert-danger" role="alert">
 O &lt;strong>tipo&lt;/strong> precisa respeitar o seguinte padrão:&lt;strong>&lt;code>CREDENTIAL_PROVIDER_VARIABLE&lt;/code>&lt;/strong>
 &lt;/div>
-&lt;p>Por exemplo, para usar as credenciais do &lt;strong>&lt;code>GITHUB&lt;/code>&lt;/strong> como parâmetros, você precisa informá-las no arquivo **&lt;code>config.json&lt;/code>**da fórmula:&lt;/p>
+&lt;p>Por exemplo, para usar as credenciais do &lt;strong>&lt;code>GITHUB&lt;/code>&lt;/strong> como parâmetros, você precisa informá-las no arquivo &lt;strong>&lt;code>config.json&lt;/code>&lt;/strong> da fórmula:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;inputs&amp;#34;: [
 {
 &amp;#34;name&amp;#34;: &amp;#34;git_user&amp;#34;,
@@ -952,8 +973,8 @@ A flag &lt;strong>&amp;ndash;stdin&lt;/strong> será descontinuada no início de
 &lt;p>&lt;strong>&lt;code>echo&lt;/code>&lt;/strong>&lt;code>'{&amp;quot;key&amp;quot;:&amp;quot;value&amp;quot;}'&lt;/code>&lt;strong>&lt;code>|&lt;/code>&lt;/strong>&lt;code>RIT (GROUP) VERB NOUN&lt;/code> &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong>&lt;/p>
 &lt;/div>
 &lt;p>Você pode usar essas regras da flag stdin em:&lt;/p>
-&lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs/pt-br/como-usar-input-flags/comandos-core.md">&lt;strong>Comandos Core&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs/pt-br/como-usar-input-flags/comandos-de-formulas.md">&lt;strong>Comandos de fórmulas&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Como: Comandos Core</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-core/</guid><description>
+&lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-core/">&lt;strong>Comandos Core&lt;/strong>&lt;/a>&lt;/p>
+&lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-de-f%C3%B3rmulas/">&lt;strong>Comandos de fórmulas&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Como: Comandos Core</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-core/</guid><description>
 &lt;hr>
 &lt;h2 id="comandos-core-com-stdin">Comandos Core com STDIN&lt;/h2>
 &lt;p>Aqui está o JSON usado para executar os comandos core do Ritchie através do &lt;strong>stdin&lt;/strong>.&lt;/p>
@@ -1023,14 +1044,14 @@ Sem suporte ainda
 &lt;div class="alert alert-danger" role="alert">
 &lt;p>O comando de fórmula, através do stdin, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.&lt;/p>
 &lt;p>Se, durante a implementação da fórmula, for demandada uma informação via &lt;strong>prompt&lt;/strong>, não será possível usar exclusivamente o stdin para fórmula ser executada com sucesso.&lt;/p>
-&lt;/div></description></item><item><title>Como: Introdução</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/introducao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/introducao/</guid><description>
+&lt;/div></description></item><item><title>Como: Visão Geral</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/visao-geral/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/visao-geral/</guid><description>
 &lt;div class="alert alert-info" role="alert">
 &lt;p>As Input flags do Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando.&lt;/p>
 &lt;p>Nesse caso, os parâmetros de entrada precisam ser informados seguindo o padrão:&lt;/p>
 &lt;p>&lt;code>RIT (GROUP) VERB NOUN --input_name='input_value'&lt;/code>&lt;/p>
 &lt;/div>
 &lt;p>Você pode usar as regras do input flags em:&lt;/p>
-&lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas.md">&lt;strong>Comandos de fórmulas&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Como: Comandos Core</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-core/</guid><description>
+&lt;p>👉 &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-de-f%C3%B3rmulas/">&lt;strong>Comandos de fórmulas&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Como: Comandos Core</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-core/</guid><description>
 &lt;hr>
 &lt;h2 id="core-commands-com-input-flags">Core Commands com input flags&lt;/h2>
 &lt;div class="alert alert-info" role="alert">

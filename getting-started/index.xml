@@ -1,9 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Getting Started</title><link>https://zupit.github.io/docs-ritchie/getting-started/</link><description>Recent content in Getting Started on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/docs-ritchie/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started: Install CLI</title><link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/introdu%C3%A7%C3%A3o/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/introdu%C3%A7%C3%A3o/</guid><description>
 &lt;hr>
 &lt;p>To &lt;strong>start Ritchie&amp;rsquo;s installation&lt;/strong> on your machine, follow the steps for your operating system. If you want, you can use the manual installation.&lt;/p>
-&lt;p>{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
-It&amp;rsquo;s optional to have Docker installed, just in case you want to &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-build-formulas/">&lt;strong>build your formulas&lt;/strong>&lt;/a> there.&lt;/p>
-&lt;p>{{% /alert %}}&lt;/p></description></item><item><title>Getting Started: Linux</title><link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</guid><description>
+&lt;div class="alert alert-info" role="alert">
+It&amp;rsquo;s optional to have Docker installed, just in case you want to &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/build-formulas/">&lt;strong>build your formulas&lt;/strong>&lt;/a> there.
+&lt;/div></description></item><item><title>Getting Started: Linux</title><link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</guid><description>
 &lt;hr>
 &lt;h3 id="requirements">&lt;strong>Requirements&lt;/strong>&lt;/h3>
 &lt;p>If you want to efficiently use Ritchie on Linux with version &lt;strong>&lt;code>2.0.5 and earlier&lt;/code>&lt;/strong>, we recommend to install the following element configured:&lt;/p>
@@ -32,7 +32,7 @@ If you prefer, you also can follow with the&lt;a href="manual-installation"> &lt
 &lt;/ul>
 &lt;div class="alert alert-warning" role="alert">
 &lt;p>To install &lt;em>5sum&lt;/em>* with _**Homebrew**_ , use: &lt;code>brew install5sha1sum&lt;/code>&lt;/p>
-&lt;p>To install &lt;em>5sum&lt;/em>* with _**MacPorts**_ , use: &lt;code>sudo port install5sha1sum&lt;/code>&lt;/p>
+&lt;p>To install &lt;strong>5sum&lt;/strong> with &lt;em>&lt;strong>MacPorts&lt;/strong>&lt;/em> , use: &lt;code>sudo port install5sha1sum&lt;/code>&lt;/p>
 &lt;/div>
 &lt;h2 id="step-1-installing-command">Step 1: Installing command&lt;/h2>
 &lt;h3 id="first-option">First option&lt;/h3>
@@ -102,7 +102,7 @@ source ~/.rit_completion
 PATH=$RIT_PATH/bin:$PATH
 rit completion bash &amp;gt; ~/.rit_completion
 source ~/.rit_completion​
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="setting-environment-variables-windows-a-idsetting-environment-variables-windowsa">Setting environment variables (Windows) &lt;a id="setting-environment-variables-windows">&lt;/a>&lt;/h3>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="setting-environment-variables-windows">&lt;strong>Setting environment variables (Windows)&lt;/strong>&lt;/h3>
 &lt;p>For this operating system, you need to call rit on the terminal directly from rit.exe (&lt;strong>rit.exe login&lt;/strong> command for example)&lt;/p>
 &lt;p>It is possible (and suggested) to create an environment variable for rit to facilitate the use of the CLI.&lt;/p>
 &lt;p>Here are some articles explaining how to add an environment variable in Windows:&lt;/p>
@@ -118,7 +118,7 @@ source ~/.rit_completion​
 &lt;ol>
 &lt;li>If he &lt;strong>wants to contribute anonymously&lt;/strong> to Ritchie metrics.&lt;/li>
 &lt;li>If he &lt;strong>wants to add the community&lt;/strong> formulas locally.&lt;/li>
-&lt;li>If he &lt;strong>wants the default&lt;/strong> &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-run-formulas/">&lt;strong>formula execution method&lt;/strong>&lt;/a> &lt;strong>to be local or through docker.&lt;/strong>&lt;/li>
+&lt;li>If he &lt;strong>wants the default&lt;/strong> &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/run-formulas/overview/">&lt;strong>formula execution method&lt;/strong>&lt;/a> &lt;strong>to be local or through docker.&lt;/strong>&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/rit-init%20%283%29%20%281%29.gif" alt="">&lt;/p>
 &lt;p>Then, the command execution will create all the necessary configuration&amp;rsquo;s files.&lt;/p>
@@ -137,8 +137,8 @@ All operations done using Ritchie will be saved in this &lt;strong>.rit&lt;/stro
 &lt;div class="alert alert-info" role="alert">
 &lt;p>When a new Ritchie CLI version is released, a warning will appear when executing one of the following commands:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>&lt;code>rit&lt;/code>&lt;/strong>&lt;em>(helper)&lt;br>
--&lt;/em> &lt;strong>&lt;code>rit -v&lt;/code>&lt;/strong> &lt;em>(version)&lt;/em>&lt;/li>
+&lt;li>&lt;strong>&lt;code>rit&lt;/code>&lt;/strong>_(helper)&lt;/li>
+&lt;li>&lt;strong>&lt;code>rit -v&lt;/code>&lt;/strong> &lt;em>(version)&lt;/em>&lt;/li>
 &lt;/ul>
 &lt;/div>
 &lt;p>To upgrade the Ritchie CLI version when this warning appears, run the following command:&lt;/p>

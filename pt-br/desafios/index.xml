@@ -4,11 +4,10 @@
 &lt;h3 id="premissas">Premissas&lt;/h3>
 &lt;p>Para realizar os desafios que estão propostos nas próximas páginas, você precisa entender os seguintes conceitos:&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/">&lt;strong>Como executar fórmulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/">&lt;strong>Como criar fórmulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/">&lt;strong>Como implementar fórmulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/executar-f%C3%B3rmulas/visao-geral/">&lt;strong>Como executar fórmulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/criar-f%C3%B3rmulas/">&lt;strong>Como criar fórmulas&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-build-formulas/">&lt;strong>Como &amp;ldquo;buildar&amp;rdquo; fórmulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/">&lt;strong>Como encapsular formulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/">&lt;strong>Como encapsular formulas&lt;/strong>&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="desafios">Desafios&lt;/h3>
 &lt;p>O &lt;strong>&lt;code>primeiro desafio&lt;/code>&lt;/strong> é para você entender como manipular inputs básicos.&lt;/p>
@@ -50,7 +49,7 @@ Parabéns! Você completou a tarefa de nível 1!
 &lt;li>Permita que o usuário digite números decimais.&lt;/li>
 &lt;/ul>
 &lt;h2 id="próximos-passos">&lt;strong>Próximos passos&lt;/strong>&lt;/h2>
-&lt;p>👉 Se você completou o primeiro desafio, vamos para o&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/content/pt-br/nivel-2-credenciais"> &lt;strong>desafio nível 2&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Desafios: Nível 2 Credenciais</title><link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</guid><description>
+&lt;p>👉 Se você completou o primeiro desafio, vamos para o&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/"> &lt;strong>desafio nível 2&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Desafios: Nível 2 Credenciais</title><link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</guid><description>
 &lt;h1 id="nível-2-credenciais">Nível 2: Credenciais&lt;/h1>
 &lt;h2 id="objetivo">Objetivo&lt;/h2>
 &lt;p>Neste tutorial, a ideia é criar uma fórmula que vai &lt;strong>retornar um JSON contendo as credenciais do Github.&lt;/strong>&lt;/p>
@@ -82,12 +81,12 @@ Sugestão de comando: &lt;strong>&lt;code>rit github get user&lt;/code>&lt;/stro
 &lt;li>Codifique uma fórmula que permitirá ao usuário gerar uma &lt;strong>release&lt;/strong> do repositório Github informado.&lt;/li>
 &lt;/ul>
 &lt;h2 id="próximos-passos">&lt;strong>Próximos passos&lt;/strong>&lt;/h2>
-&lt;p>👉 Se você completou o segundo desafio, vamos para o &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/content/pt-br/nivel-3-inputs-condicionais">&lt;strong>desafio nível 3&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Desafios: Nível 3 Inputs condicionais</title><link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</guid><description>
+&lt;p>👉 Se você completou o segundo desafio, vamos para o &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/">&lt;strong>desafio nível 3&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Desafios: Nível 3 Inputs condicionais</title><link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</guid><description>
 &lt;h1 id="nível-3-inputs-condicionais">Nível 3: Inputs condicionais&lt;/h1>
 &lt;h2 id="objetivo">Objetivo&lt;/h2>
 &lt;p>Neste tutorial, a ideia é criar uma fórmula que vai &lt;strong>retornar a ferramenta selecionada pelo usuário de acordo com seu perfil&lt;/strong>.&lt;/p>
 &lt;blockquote>
-&lt;p>Você encontrará todas as informações necessárias na seção do tutorial &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/">&lt;strong>relacionada ao arquivo config.json&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Você encontrará todas as informações necessárias na seção do tutorial &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/">&lt;strong>relacionada ao arquivo config.json&lt;/strong>&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;div class="alert alert-info" role="alert">
 Sugestão de comando: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
@@ -113,7 +112,7 @@ Sugestão de comando: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
 &lt;li>Instale a ferramenta selecionada de acordo com o SO do computador.&lt;/li>
 &lt;/ul>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>👉 Se você completou o terceiro desafio, vamos para o &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/content/pt-br/nivel-4-encapsulamento">&lt;strong>desafio nível 4&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Desafios: Nível 4 Encapsulamento</title><link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</guid><description>
+&lt;p>👉 Se você completou o terceiro desafio, vamos para o &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/">&lt;strong>desafio nível 4&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Desafios: Nível 4 Encapsulamento</title><link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</guid><description>
 &lt;h1 id="nível-4-encapsulamento">Nível 4: Encapsulamento&lt;/h1>
 &lt;h2 id="objetivo">Objetivo&lt;/h2>
 &lt;p>Neste tutorial, a ideia é criar uma fórmula que vai &lt;strong>encapsular outra fórmula dentro dela&lt;/strong>.&lt;/p>

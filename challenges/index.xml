@@ -4,11 +4,10 @@
 &lt;h3 id="premises">Premises&lt;/h3>
 &lt;p>To perform the tasks in this section, it will be necessary to understand the following concepts:&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-run-formulas/">&lt;strong>How to run formulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-create-formulas/">&lt;strong>How to create formulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-implement-formulas/">&lt;strong>How to implement formulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-build-formulas/">&lt;strong>How to build formulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-group-formulas/">&lt;strong>How to group formulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/run-formulas/overview/">&lt;strong>How to run formulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/create-formulas/">&lt;strong>How to create formulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/build-formulas/">&lt;strong>How to build formulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/group-formulas/">&lt;strong>How to group formulas&lt;/strong>&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="challenges">Challenges&lt;/h3>
 &lt;p>The &lt;strong>&lt;code>first challenge&lt;/code>&lt;/strong> is to understand how to manipulate basic inputs.&lt;/p>
@@ -55,7 +54,7 @@ Well done! You&amp;rsquo;ve completed the first task!
 &lt;h2 id="objective">Objective&lt;/h2>
 &lt;p>Create a formula on Ritchie that will &lt;strong>return a JSON with Github credentials&lt;/strong>.&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>Note&lt;/strong>: The challenge consists in configure those inputs inside the &lt;strong>config.json&lt;/strong> file, but run the formula without informing them as &lt;code>prompt&lt;/code> or &lt;code>stdin&lt;/code> (they will be extracted automatically). You&amp;rsquo;ll find all the informations you need in the &lt;a href="https://docs.ritchiecli.io/how-to/manipulate-credentials">&lt;strong>how to manipulate credentials&lt;/strong>&lt;/a> tutorial section.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: The challenge consists in configure those inputs inside the &lt;strong>config.json&lt;/strong> file, but run the formula without informing them as &lt;code>prompt&lt;/code> or &lt;code>stdin&lt;/code> (they will be extracted automatically). You&amp;rsquo;ll find all the informations you need in the &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/credentials/set-credentials/">&lt;strong>how to manipulate credentials&lt;/strong>&lt;/a> tutorial section.&lt;/p>
 &lt;/blockquote>
 &lt;div class="alert alert-info" role="alert">
 Command suggestion: &lt;strong>&lt;code>rit github get user&lt;/code>&lt;/strong>
@@ -87,7 +86,7 @@ Command suggestion: &lt;strong>&lt;code>rit github get user&lt;/code>&lt;/strong
 &lt;h2 id="objective">Objective&lt;/h2>
 &lt;p>Create a formula on Ritchie that will &lt;strong>return the tool selected by the user according to its profile&lt;/strong>.&lt;/p>
 &lt;blockquote>
-&lt;p>You&amp;rsquo;ll find all the information you need about the &lt;strong>conditional field&lt;/strong> on the &lt;a href="https://docs.ritchiecli.io/how-to/implement-a-formula#1-config-json">&lt;strong>config.json file section&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>You&amp;rsquo;ll find all the information you need about the &lt;strong>conditional field&lt;/strong> on the &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/configure-inputs/">&lt;strong>config.json inputs&lt;/strong>&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;div class="alert alert-info" role="alert">
 Command suggestion: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
