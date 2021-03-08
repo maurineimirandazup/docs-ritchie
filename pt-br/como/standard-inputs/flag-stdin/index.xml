@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Flag stdin</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/</link><description>Recent content in Flag stdin on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/index.xml" rel="self" type="application/rss+xml"/><item><title>Como: Visão Geral</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/visao-geral/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/visao-geral/</guid><description>
 &lt;hr>
 &lt;div class="alert alert-danger" role="alert">
-A flag &lt;strong>&amp;ndash;stdin&lt;/strong> será descontinuada no início de 2021, sendo substituída pelos &lt;a href="../../como-usar-input-flags/">input flags&lt;/a>.
+A flag &lt;strong>&amp;ndash;stdin&lt;/strong> será descontinuada no início de 2021, sendo substituída pelos &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/">input flags&lt;/a>.
 &lt;/div>
 &lt;div class="alert alert-info" role="alert">
 &lt;p>A flag &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong> no Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando.&lt;/p>

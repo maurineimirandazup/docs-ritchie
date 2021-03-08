@@ -14,7 +14,7 @@
 &lt;h3 id="2-through-docker">2. Through Docker&lt;/h3>
 &lt;p>All formulas can run regardless the programming language used from the moment you have &lt;strong>&lt;code>DOCKER&lt;/code>&lt;/strong> installed and running.&lt;/p>
 &lt;div class="alert alert-info" role="alert">
-Check out on the following example &lt;a href="hello-world-formula">&lt;strong>how to run a &amp;ldquo;Hello World&amp;rdquo; formula&lt;/strong> &lt;/a>
+Check out on the following example &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/">&lt;strong>how to run a &amp;ldquo;Hello World&amp;rdquo; formula&lt;/strong> &lt;/a>
 &lt;/div>
 &lt;h3 id="3-local--docker-flags">3. Local &amp;amp; Docker Flags&lt;/h3>
 &lt;p>You can force Ritchie CLI to execute a formula with a specific method using flags.&lt;/p>
@@ -98,6 +98,6 @@ Most of the community formulas are composed of a &lt;a href="https://github.com/
 &lt;p>Check which formulas you can run using the following command:&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>See how &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-create-formulas/">&lt;strong>create formula&lt;/strong> &lt;/a>.&lt;/p>
+&lt;p>See how to &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/create-formulas/">&lt;strong>create formula&lt;/strong> &lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul></description></item></channel></rss>

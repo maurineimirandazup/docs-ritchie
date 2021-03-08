@@ -117,7 +117,7 @@ Command suggestion: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
 &lt;h2 id="objective">Objective&lt;/h2>
 &lt;p>Create a formula on Ritchie that will &lt;strong>execute another formula inside it.&lt;/strong>&lt;/p>
 &lt;blockquote>
-&lt;p>You&amp;rsquo;ll find all the informations you need in the &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-group-formulas/">&lt;strong>how to group formulas&lt;/strong>&lt;/a> tutorial section.&lt;/p>
+&lt;p>You&amp;rsquo;ll find all the informations you need in the &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/group-formulas/">&lt;strong>how to group formulas&lt;/strong>&lt;/a> tutorial section.&lt;/p>
 &lt;/blockquote>
 &lt;p>The idea is to group at least 2 formulas inside another one:&lt;/p>
 &lt;ul>

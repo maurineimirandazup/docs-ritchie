@@ -117,7 +117,7 @@ Sugestão de comando: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
 &lt;h2 id="objetivo">Objetivo&lt;/h2>
 &lt;p>Neste tutorial, a ideia é criar uma fórmula que vai &lt;strong>encapsular outra fórmula dentro dela&lt;/strong>.&lt;/p>
 &lt;blockquote>
-&lt;p>Você encontrará todas as informações necessárias na seção do tutorial sobre&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/content/pt-br/tutoriais/formulas/como-encapsular-formulas"> &lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Você encontrará todas as informações necessárias na seção do tutorial sobre&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/"> &lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;p>A ideia é encapsular pelo menos 2 fórmulas dentro de uma outra:&lt;/p>
 &lt;ul>

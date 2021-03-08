@@ -955,7 +955,7 @@ github default {&amp;#34;token&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;email&am
 &lt;p>👉 Veja a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/">&lt;strong>lista de comandos&lt;/strong>&lt;/a> para ver as automações disponíveis no repo da nossa comunidade.&lt;/p></description></item><item><title>Como: Visão Geral</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/visao-geral/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/visao-geral/</guid><description>
 &lt;hr>
 &lt;div class="alert alert-danger" role="alert">
-A flag &lt;strong>&amp;ndash;stdin&lt;/strong> será descontinuada no início de 2021, sendo substituída pelos &lt;a href="../../como-usar-input-flags/">input flags&lt;/a>.
+A flag &lt;strong>&amp;ndash;stdin&lt;/strong> será descontinuada no início de 2021, sendo substituída pelos &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/">input flags&lt;/a>.
 &lt;/div>
 &lt;div class="alert alert-info" role="alert">
 &lt;p>A flag &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong> no Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando.&lt;/p>
