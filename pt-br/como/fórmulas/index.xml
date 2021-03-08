@@ -102,11 +102,13 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong>não é reco
 &lt;/table>
 &lt;p>Você pode encontrar todos os &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages">&lt;strong>templates de linguagens&lt;/strong>&lt;/a> no repositório ritchie-formulas.&lt;/p>
 &lt;h3 id="exemplos-de-pastas-de-fórmulas">Exemplos de pastas de fórmulas&lt;/h3>
-&lt;div class='code-tabs'>
-&lt;ul class="nav nav-tabs">&lt;/ul>
-&lt;div class="tab-content">
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/go%20%281%29%20%281%29%20%281%29.png" alt="">&lt;/p>
+&lt;ul class="nav nav-tabs" id="t" role="tablist">&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link active" href="#t-0" role="tab" aria-controls="t-0" aria-selected="true">Golang&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t-1" role="tab" aria-controls="t-1">Java&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t-2" role="tab" aria-controls="t-2">Node&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t-3" role="tab" aria-controls="t-3">Python&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t-4" role="tab" aria-controls="t-4">Shell&lt;/a>&lt;/li>&lt;/ul>
+&lt;div class="tab-content" id="t">&lt;div id="t-0" class="tab-pane show active" role="tabpanel" aria-labelledby="t-0">
+&lt;p>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/go%20%281%29%20%281%29%20%281%29.png" alt="">&lt;/p>
 &lt;p>De acordo com a imagem acima, você deve editar os arquivos:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>config.json:&lt;/strong> alterar os &lt;em>&lt;strong>inputs&lt;/strong>&lt;/em> e suas configurações.&lt;/li>
@@ -115,8 +117,8 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong>não é reco
 &lt;li>&lt;strong>help.json:&lt;/strong> alterar a mensagem de descrição do comando ou sub-comando.&lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/java%20%282%29%20%282%29%20%282%29.png" alt="">&lt;/p>
+&lt;div id="t-1" class="tab-pane" role="tabpanel" aria-labelledby="t-1">
+&lt;p>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/java%20%282%29%20%282%29%20%282%29.png" alt="">&lt;/p>
 &lt;p>De acordo com a imagem acima, você deve editar os arquivos:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>config.json:&lt;/strong> alterar os &lt;em>&lt;strong>inputs&lt;/strong>&lt;/em> e suas configurações.&lt;/li>
@@ -125,8 +127,8 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong>não é reco
 &lt;li>&lt;strong>help.json:&lt;/strong> alterar a mensagem de descrição do comando ou sub-comando.&lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/node%20%283%29%20%283%29%20%282%29.png" alt="">&lt;/p>
+&lt;div id="t-2" class="tab-pane" role="tabpanel" aria-labelledby="t-2">
+&lt;p>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/node%20%283%29%20%283%29%20%282%29.png" alt="">&lt;/p>
 &lt;p>De acordo com a imagem acima, você deve editar os arquivos:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>config.json:&lt;/strong> alterar os &lt;em>&lt;strong>inputs&lt;/strong>&lt;/em> e suas configurações.&lt;/li>
@@ -135,8 +137,8 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong>não é reco
 &lt;li>&lt;strong>help.json:&lt;/strong> alterar a mensagem de descrição do comando ou sub-comando.&lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/python%20%282%29%20%281%29.png" alt="">&lt;/p>
+&lt;div id="t-3" class="tab-pane" role="tabpanel" aria-labelledby="t-3">
+&lt;p>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/python%20%282%29%20%281%29.png" alt="">&lt;/p>
 &lt;p>De acordo com a imagem acima, você deve editar os arquivos:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>config.json:&lt;/strong> alterar os &lt;em>&lt;strong>inputs&lt;/strong>&lt;/em> e suas configurações.&lt;/li>
@@ -145,8 +147,8 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong>não é reco
 &lt;li>&lt;strong>help.json:&lt;/strong> alterar a mensagem de descrição do comando ou sub-comando.&lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/shell%20%282%29%20%281%29%20%281%29.png" alt="">&lt;/p>
+&lt;div id="t-4" class="tab-pane" role="tabpanel" aria-labelledby="t-4">
+&lt;p>&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/shell%20%282%29%20%281%29%20%281%29.png" alt="">&lt;/p>
 &lt;p>De acordo com a imagem acima, você deve editar os arquivos:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>config.json:&lt;/strong> alterar os &lt;em>&lt;strong>inputs&lt;/strong>&lt;/em> e suas configurações.&lt;/li>
@@ -154,9 +156,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong>não é reco
 &lt;li>&lt;strong>formula/*:&lt;/strong> implementar a lógica da fórmula.&lt;/li>
 &lt;li>&lt;strong>help.json:&lt;/strong> alterar a mensagem de descrição do comando ou sub-comando.&lt;/li>
 &lt;/ul>
-&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;/div>&lt;/div>
 &lt;div class="alert alert-warning" role="alert">
 As pastas e suas respectivas estruturas são o que definem o comando, então não é indicado alterar os nomes ou incluir mais pastas/arquivos &lt;strong>que não estejam dentro da pasta src/*&lt;/strong>.
 &lt;/div></description></item><item><title>Como: Configurar inputs</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/</guid><description>
@@ -423,11 +423,13 @@ Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele
 &lt;p>Esse arquivo é também onde estão as funções da fórmula, manipulando parâmetros de entrada, que são chamados para realizar uma operação e/ou automação da fórmula.&lt;/p>
 &lt;h3 id="exemplos-de-arquivo-main">Exemplos de arquivo Main&lt;/h3>
 &lt;p>Nos exemplos abaixo, sempre há a classe de uma fórmula com uma função &lt;code>Run()&lt;/code> .&lt;/p>
-&lt;div class='code-tabs'>
-&lt;ul class="nav nav-tabs">&lt;/ul>
-&lt;div class="tab-content">
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text"> input2 := os.Getenv(&amp;#34;INPUT_LIST&amp;#34;)
+&lt;ul class="nav nav-tabs" id="t1" role="tablist">&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link active" href="#t1-0" role="tab" aria-controls="t1-0" aria-selected="true">main.go&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t1-1" role="tab" aria-controls="t1-1">Main.java&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t1-2" role="tab" aria-controls="t1-2">index.js&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t1-3" role="tab" aria-controls="t1-3">main.py&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t1-4" role="tab" aria-controls="t1-4">main.sh&lt;/a>&lt;/li>&lt;/ul>
+&lt;div class="tab-content" id="t1">&lt;div id="t1-0" class="tab-pane show active" role="tabpanel" aria-labelledby="t1-0">
+&lt;p>&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text"> input2 := os.Getenv(&amp;#34;INPUT_LIST&amp;#34;)
 input3, _ := strconv.ParseBool(os.Getenv(&amp;#34;INPUT_BOOLEAN&amp;#34;))
 input4 := os.Getenv(&amp;#34;INPUT_PASSWORD&amp;#34;)
 formula.Formula{
@@ -437,10 +439,9 @@ Boolean: input3,
 Password: input4,
 }.Run(os.Stdout)
 }
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>public class Main {
+&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;div id="t1-1" class="tab-pane" role="tabpanel" aria-labelledby="t1-1">
+&lt;p>&lt;pre>&lt;code>public class Main {
 public static void main(String[] args) {
 String inputText = System.getenv(&amp;quot;INPUT_TEXT&amp;quot;);
 boolean inputBoolean = Boolean.parseBoolean(System.getenv(&amp;quot;INPUT_BOOLEAN&amp;quot;));
@@ -455,50 +456,45 @@ inputPassword
 formula.Run();
 }
 }
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>const INPUT1 = process.env.INPUT_TEXT
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="t1-2" class="tab-pane" role="tabpanel" aria-labelledby="t1-2">
+&lt;p>&lt;pre>&lt;code>const INPUT1 = process.env.INPUT_TEXT
 const INPUT2 = process.env.INPUT_BOOLEAN
 const INPUT3 = process.env.INPUT_LIST
 const INPUT4 = process.env.INPUT_PASSWORD
 run(INPUT1, INPUT2, INPUT3, INPUT4)
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>input1 = os.environ.get(&amp;quot;INPUT_TEXT&amp;quot;)
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="t1-3" class="tab-pane" role="tabpanel" aria-labelledby="t1-3">
+&lt;p>&lt;pre>&lt;code>input1 = os.environ.get(&amp;quot;INPUT_TEXT&amp;quot;)
 input2 = os.environ.get(&amp;quot;INPUT_BOOLEAN&amp;quot;)
 input3 = os.environ.get(&amp;quot;INPUT_LIST&amp;quot;)
 input4 = os.environ.get(&amp;quot;INPUT_PASSWORD&amp;quot;)
 formula.Run(input1, input2, input3, input4)
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>//Inputs are not even necessary here, as Shellscript get values from local variables directly.
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="t1-4" class="tab-pane" role="tabpanel" aria-labelledby="t1-4">
+&lt;p>&lt;pre>&lt;code>//Inputs are not even necessary here, as Shellscript get values from local variables directly.
 runFormula '$SAMPLE_TEXT' $SAMPLE_LIST '$SAMPLE_BOOL''$SAMPLE_PASSWORD'
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>Como: Adicionar as dependências de fórmula</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/depend%C3%AAncias/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/depend%C3%AAncias/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/div></description></item><item><title>Como: Adicionar as dependências de fórmula</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/depend%C3%AAncias/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/depend%C3%AAncias/</guid><description>
 &lt;hr>
 &lt;h2 id="o-que-são-as-dependências">O que são as dependências?&lt;/h2>
 &lt;div class="alert alert-info" role="alert">
 Cada linguagem de programação possui suas próprias especificidades para &lt;strong>importar bibliotecas ou pacotes&lt;/strong>.
 &lt;/div>
 &lt;p>No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente. Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar.&lt;/p>
-&lt;div class='code-tabs'>
-&lt;ul class="nav nav-tabs">&lt;/ul>
-&lt;div class="tab-content">
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">module formula
+&lt;ul class="nav nav-tabs" id="t2" role="tablist">&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link active" href="#t2-0" role="tab" aria-controls="t2-0" aria-selected="true">go.mod \(GOLANG\)&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t2-1" role="tab" aria-controls="t2-1">pom.xml \(JAVA\)&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t2-2" role="tab" aria-controls="t2-2">package.json \(NODE\)&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t2-3" role="tab" aria-controls="t2-3">requirements.txt \(PYTHON\)&lt;/a>&lt;/li>
+&lt;li class="nav-item">&lt;a data-toggle="tab" class="nav-link" href="#t2-4" role="tab" aria-controls="t2-4">composer.json \(PHP\)&lt;/a>&lt;/li>&lt;/ul>
+&lt;div class="tab-content" id="t2">&lt;div id="t2-0" class="tab-pane show active" role="tabpanel" aria-labelledby="t2-0">
+&lt;p>&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">module formula
 go 1.14
 require (
 github.com/gookit/color v1.2.5
 )
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;div id="t2-1" class="tab-pane" role="tabpanel" aria-labelledby="t2-1">
+&lt;p>&lt;pre>&lt;code>&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;
 xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt;
 &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
@@ -577,10 +573,9 @@ xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 https://maven.apa
 &amp;lt;/dependency&amp;gt;
 &amp;lt;/dependencies&amp;gt;
 &amp;lt;/project&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>{
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="t2-2" class="tab-pane" role="tabpanel" aria-labelledby="t2-2">
+&lt;p>&lt;pre>&lt;code>{
 &amp;quot;dependencies&amp;quot;: {
 &amp;quot;cli-color&amp;quot;: &amp;quot;^2.0.0&amp;quot;
 },
@@ -590,22 +585,17 @@ xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 https://maven.apa
 },
 &amp;quot;version&amp;quot;: &amp;quot;1.0.0&amp;quot;
 }
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>colored==1.4.2
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;pre>&lt;code>{
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="t2-3" class="tab-pane" role="tabpanel" aria-labelledby="t2-3">
+&lt;p>&lt;pre>&lt;code>colored==1.4.2
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="t2-4" class="tab-pane" role="tabpanel" aria-labelledby="t2-4">
+&lt;p>&lt;pre>&lt;code>{
 &amp;quot;require&amp;quot;: {
 &amp;quot;codedungeon/php-cli-colors&amp;quot;: &amp;quot;~1.0&amp;quot;
 }
 }
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>Como: Buildar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/div></description></item><item><title>Como: Buildar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/como/f%C3%B3rmulas/buildar-formulas/</guid><description>
 &lt;hr>
 &lt;div class="alert alert-danger" role="alert">
 Essa funcionalidade não está mais disponível a partir da &lt;strong>versão 2.5.0 do Ritchie.&lt;/strong> Isso porque o build da fórmula é feito de maneira automática: um repositório local criado assim que você implementa a fórmula
