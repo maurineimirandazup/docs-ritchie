@@ -16,6 +16,16 @@
 &lt;div class="alert alert-info" role="alert">
 Check out on the following example &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/">&lt;strong>how to run a &amp;ldquo;Hello World&amp;rdquo; formula&lt;/strong> &lt;/a>
 &lt;/div>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>&lt;strong>Docker user on MacOS:&lt;/strong>
+To avoid the &lt;strong>&amp;lsquo;Error: exit status 1&amp;rsquo;&lt;/strong>, you have to &lt;strong>disable&lt;/strong> the Cloud Experience, depending on your version.&lt;/p>
+&lt;p>See how:
+Access on Docker:&lt;/p>
+&lt;ul>
+&lt;li>Preferences &amp;gt; Command Line&amp;gt; Enable cloud experience.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/static/ritchiedocker.PNG" alt="">&lt;/p>
+&lt;/div>
 &lt;h3 id="3-local--docker-flags">3. Local &amp;amp; Docker Flags&lt;/h3>
 &lt;p>You can force Ritchie CLI to execute a formula with a specific method using flags.&lt;/p>
 &lt;ul>
