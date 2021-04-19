@@ -218,6 +218,181 @@ The rit build formula command was deprecated from Ritchie&amp;rsquo;s version 2.
 &lt;p>&lt;strong>&lt;code>repository&lt;/code>&lt;/strong> You can use repository commands to download formulas and consume them.&lt;/p>
 &lt;p>Commands for repos and workspaces are similar, both will allow the CLI to &amp;ldquo;see&amp;rdquo; available formulas. Workspaces have a higher priority than Repos (if you use both commands for the same formulas repositories, the workspaces formulas will be executed).&lt;/p>
 &lt;p>Check out more about workspace and repositories commands &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/reference/list-of-commands-and-flags/">&lt;strong>in the list of commands and flags&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Reference: Release Notes</title><link>https://zupit.github.io/docs-ritchie/reference/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/release-notes/</guid><description>
-&lt;p>Check out Ritchie&amp;rsquo;s &lt;a href="https://github.com/ZupIT/ritchie-cli/releases">&lt;strong>Release Notes&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Reference: Roadmap</title><link>https://zupit.github.io/docs-ritchie/reference/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/roadmap/</guid><description>
+&lt;h3 id="where-can-you-follow-up">Where can you follow up?&lt;/h3>
+&lt;p>Check out Ritchie&amp;rsquo;s &lt;a href="https://github.com/ZupIT/ritchie-cli/releases">&lt;strong>Release Notes&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h2 id="ritchie-10-and-ritchie-20">&lt;strong>Ritchie 1.0 and Ritchie 2.0&lt;/strong>&lt;/h2>
+&lt;p>Differences between version 1.0 and 2.0&lt;/p>
+&lt;ul>
+&lt;li>Ritchie versions &lt;strong>Single&lt;/strong> and &lt;strong>Team&lt;/strong> are deprecated. &lt;em>Check the observation below if you still want to use the previous version.&lt;/em>&lt;/li>
+&lt;li>The command tree will be dynamically generated on the added repositories. &lt;em>So, it won&amp;rsquo;t be necessary to edit formula&amp;rsquo;s repositories tree.json files anymore.&lt;/em>&lt;/li>
+&lt;li>There isn&amp;rsquo;t a cloud storage anymore. &lt;em>The user can import formulas repositories from Github or Gitlab.&lt;/em> (&lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong>) __&lt;/li>
+&lt;li>Autocomplete support for 2 new shells: &lt;strong>Fish&lt;/strong> and &lt;strong>Powershell&lt;/strong>. (&lt;strong>&lt;code>rit completion fish&lt;/code>&lt;/strong> | &lt;strong>&lt;code>rit completion powershell&lt;/code>&lt;/strong>)&lt;/li>
+&lt;li>Support to run formula in a container. (&lt;strong>&lt;code>--docker flag&lt;/code>&lt;/strong>)&lt;/li>
+&lt;li>Support to build formulas on Windows OS.&lt;/li>
+&lt;li>New tutorial to the CLI.&lt;/li>
+&lt;li>Structural upgrades.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-danger" role="alert">
+Version 2.0 &lt;strong>doesn&amp;rsquo;t support Vault to share credentials&lt;/strong>.&lt;br>
+Therefore, if you want to keep using those features, you have to stay on the &lt;strong>1.0 version.&lt;/strong>
+&lt;/div>
+&lt;h2 id="how-to-migrate-formulas-from-v10-to-v20-">How to migrate formulas from V1.0 to V2.0 ?&lt;/h2>
+&lt;h3 id="context">Context&lt;/h3>
+&lt;p>If you use Ritchie 1.0 version and want to upgrade to the 2.0 one, &lt;strong>you have to update your formula&amp;rsquo;s repository structure&lt;/strong> to be compatible to the pattern used on the new version.&lt;/p>
+&lt;h3 id="how-to-migrate">How to migrate?&lt;/h3>
+&lt;p>&lt;strong>Step 1&lt;/strong>: Create new formula repo from scratch using the &lt;strong>&lt;code>rit create formula&lt;/code>&lt;/strong> command.&lt;/p>
+&lt;ul>
+&lt;li>Adding the same formulas paths used on the older repository to the new one.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Step 2:&lt;/strong> Export your formulas implementations from the older repository to the new one.&lt;/p>
+&lt;ul>
+&lt;li>The structure still uses the same files: &lt;strong>&lt;code>config.json&lt;/code>&lt;/strong> , &lt;strong>&lt;code>main.*&lt;/code>&lt;/strong>, &lt;strong>&lt;code>formula.*&lt;/code>&lt;/strong>.&lt;/li>
+&lt;li>Copy these files codes from the old structure to the new one, respecting the new layout.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Step 3&lt;/strong>: Publish the new formula repository on &lt;strong>github&lt;/strong> or &lt;strong>gitlab&lt;/strong> (also, it can &lt;strong>public&lt;/strong> or &lt;strong>private&lt;/strong>).&lt;/p>
+&lt;p>&lt;strong>Step 4&lt;/strong>: Generate a release of the formula repository.&lt;/p>
+&lt;p>&lt;strong>Step 5&lt;/strong>: Add the formula repository on Ritchie using the &lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong> command.&lt;/p>
+&lt;p>&lt;strong>Step 6&lt;/strong>: Share your formula&amp;rsquo;s repository with your team, colleagues or the community.&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+If you have any question, feel free to contact our team at &lt;strong>&lt;a href="mailto:ritchie@zup.com.br">ritchie@zup.com.br&lt;/a>&lt;/strong> or by opening an issue on the &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formulas repository&lt;/strong>&lt;/a>.
+&lt;/div></description></item><item><title>Reference: Roadmap</title><link>https://zupit.github.io/docs-ritchie/reference/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/roadmap/</guid><description>
 &lt;p>See Ritchie&amp;rsquo;s roadmap on &lt;a href="https://github.com/ZupIT/ritchie-cli/issues">&lt;strong>Github&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Reference: Youtube</title><link>https://zupit.github.io/docs-ritchie/reference/youtube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/youtube/</guid><description>
-&lt;p>Check out Ritchie&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=GHrW68Nj358&amp;amp;list=PLkX9oUrQ1ev72KUhsB5gi80Y5Jb-DCV_F&amp;amp;index=1">&lt;strong>Youtube&lt;/strong>&lt;/a> channel.&lt;/p></description></item></channel></rss>
+&lt;p>Check out Ritchie&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=GHrW68Nj358&amp;amp;list=PLkX9oUrQ1ev72KUhsB5gi80Y5Jb-DCV_F&amp;amp;index=1">&lt;strong>Youtube&lt;/strong>&lt;/a> channel.&lt;/p></description></item><item><title>Reference: About Ritchie</title><link>https://zupit.github.io/docs-ritchie/reference/about-ritchie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/about-ritchie/</guid><description>
+&lt;hr>
+&lt;h2 id="where-ritchie-came-from">&lt;strong>Where Ritchie came from?&lt;/strong>&lt;/h2>
+&lt;p>Ritchie&amp;rsquo;s objective is to improve the developer’s experience, bringing them more autonomy, automating and simplifying the execution of commands that are widely used in the process of creating and developing digital products. Its name is a tribute to &lt;strong>Dennis Ritchie&lt;/strong>, one of the creators of Unix (predecessor of Linux) and also of the C language. One of the pioneer of the digital world as we know it today.&lt;/p>
+&lt;p>Despite the number of multidisciplinary teams in the market, a great challenge still is to reduce the dependence that developers have on inputs coming from the infrastructure and operations teams. &lt;strong>DevOps&lt;/strong> did a lot to remedy this bottleneck, but it did not completely eliminate the dependency between areas.&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+With that in mind, we bring a tool to the community that promotes a &lt;strong>NoOps&lt;/strong> movement, a solution that automates repetitive operations and streamlines processes (also known as toil) that are often hampered in the infrastructure. This will give developers the ability to perform operations that were exclusively the infrastructure&amp;rsquo;s domain.
+&lt;/div>
+&lt;p>In that way, professionals - on all fronts - gain time to work on more complex and relevant tasks to generate value for their project.&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/rit-demo-deploy-project%20%281%29%20%281%29.gif" alt="">&lt;/p>
+&lt;h2 id="what-makes-ritchie-different">&lt;strong>What makes Ritchie different?&lt;/strong>&lt;/h2>
+&lt;p>Because it is a CLI tool, Ritchie seeks to improve the operational &lt;strong>developers'&lt;/strong> &lt;strong>experience and brings beneficial such as:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Simplify repetitive and easy-to-execute tasks&lt;/li>
+&lt;li>Reduce the rework&lt;/li>
+&lt;li>Promote more time for the development team to focus on their deliveries.&lt;/li>
+&lt;/ul>
+&lt;p>So, instead of writing down on the command lines which parameters and / or arguments the user needs to inform, we do the opposite: Ritchie presents the available options and goes, line by line, asking for the information needed for the command to work, in an interactive way.&lt;/p>
+&lt;p>In the example below, we have the execution of a scaffold command with the coffee formula. As the user signals which formula he wants to use, the system automatically passes, line by line, asking which specific parameters must be considered to perform the desired action.&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/rit-scaffold-generate-coffe-go%20%281%29.gif" alt="">&lt;/p></description></item><item><title>Reference: Glossary</title><link>https://zupit.github.io/docs-ritchie/reference/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/glossary/</guid><description>
+&lt;hr>
+&lt;p>The main concepts on Ritchie are&lt;/p>
+&lt;ul>
+&lt;li>CLI&lt;/li>
+&lt;li>Command Tree&lt;/li>
+&lt;li>Credential&lt;/li>
+&lt;li>Environment&lt;/li>
+&lt;li>Formula&lt;/li>
+&lt;li>JSON&lt;/li>
+&lt;li>Repository&lt;/li>
+&lt;li>Standard Streams&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">&lt;strong>CLI&lt;/strong>&lt;/h2>
+&lt;p>It refers to a command line interface, which is a program that processes commands in a software or any computing program only through text.&lt;/p>
+&lt;h2 id="command-tree">&lt;strong>Command Tree&lt;/strong>&lt;/h2>
+&lt;div class="alert alert-info" role="alert">
+&lt;p>Commands used in Ritchie are grouped according to a &lt;strong>tree&lt;/strong>.&lt;/p>
+&lt;p>It is important to know this concept in order to actually understand the structure of the product.&lt;/p>
+&lt;/div>
+&lt;p>In the case of Ritchie, the &lt;strong>Cobra&lt;/strong> (a Golang library) pattern was followed using the following logic of building core commands:&lt;/p>
+&lt;p>&lt;strong>&lt;code>RIT + VERB + NOUN&lt;/code>&lt;/strong>&lt;/p>
+&lt;p>To allow more options and freedom for users, it is also allowed to follow the pattern below in the construction of formula commands:&lt;/p>
+&lt;p>&lt;strong>&lt;code>RIT + GROUP + VERB + NOUN&lt;/code>&lt;/strong>&lt;/p>
+&lt;p>The app name is Ritchie, so we use the name &lt;strong>&lt;code>rit&lt;/code>&lt;/strong> to start our command tree.&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/arvore-rit%20%281%29%20%281%29.png" alt="">&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>The &lt;strong>rit&lt;/strong> command is therefore our parent command, or &lt;strong>root&lt;/strong>. It is not executable (it means that it will not start any operations if you use it alone in the terminal), but has been configured to return the &lt;strong>helper command&lt;/strong>.&lt;/p>
+&lt;p>It is necessary to use executable sub-commands (which are child commands, or branches, of the rit command) in order to start any process.&lt;/p>
+&lt;/div>
+&lt;p>The executable commands in Ritchie are the commands located at the last level of the tree.&lt;/p>
+&lt;p>For example, in the image above:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>&lt;code>rit set context&lt;/code>&lt;/strong> command is executable, as it is at the last level of the tree.&lt;/li>
+&lt;li>The &lt;strong>&lt;code>rit kafka create&lt;/code>&lt;/strong> command is not executable as there is an executable &lt;strong>topic&lt;/strong> subcommand, at the last level of the tree.&lt;/li>
+&lt;/ul>
+&lt;p>This command tree concept is the &lt;strong>core&lt;/strong> of Ritchie&amp;rsquo;s structure.&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+All commands and sub-commands are mapped in a tree dynamically created according to the repositories the user added locally on his computer by using the &lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong> command.
+&lt;/div>
+&lt;h2 id="credential">&lt;strong>Credential&lt;/strong>&lt;/h2>
+&lt;p>It refers to reusable input parameters that you can use in Ritchie (example: access data for any tool or api).&lt;/p>
+&lt;h2 id="environment">&lt;strong>Environment&lt;/strong>&lt;/h2>
+&lt;p>On Ritchie, each environment will have its own credentials, which can be necessary to execute specific formulas through the CLI.&lt;/p>
+&lt;p>&lt;em>For example: it&amp;rsquo;s possible to create a &lt;strong>professional&lt;/strong> and a &lt;strong>personal&lt;/strong> environments (or &lt;strong>prod&lt;/strong> and &lt;strong>staging&lt;/strong>) with different credentials, and switch from an environment to another according to the necessity.&lt;/em>&lt;/p>
+&lt;h2 id="formula">&lt;strong>Formula&lt;/strong>&lt;/h2>
+&lt;p>On Ritchie&amp;rsquo;s context, a formula is a script that can be executed through a command line once it has been adapted to Ritchie structure. It allows the user to execute it locally or through Docker and with its necessary dependencies.&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+Formulas are executed after running command lines on the terminal.
+&lt;/div>
+&lt;p>Depending on the formula, the user might need to inform input parameters.&lt;/p>
+&lt;p>Those input parameters can be informed in different ways:&lt;/p>
+&lt;ul>
+&lt;li>After running the command on the terminal (via &lt;strong>prompt&lt;/strong>)&lt;/li>
+&lt;li>When typing the command on the terminal (via &lt;strong>stdin&lt;/strong> or &lt;strong>input flags&lt;/strong>)&lt;/li>
+&lt;li>During the execution of the formula (if coded using &lt;strong>prompt&lt;/strong>)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/start-end-ritchie%20%281%29.jpg" alt="">&lt;/p>
+&lt;h2 id="json">&lt;strong>JSON&lt;/strong>&lt;/h2>
+&lt;p>It refers to JavaScript Object Notation (JSON), that is a standard text based &lt;strong>format&lt;/strong> used to structure data created with Java programming language.&lt;/p>
+&lt;h2 id="repository">&lt;strong>Repository&lt;/strong>&lt;/h2>
+&lt;p>A storage place you can organize features, commands or any files and/or files necessary to use a tool. On Ritchie, there are three repositories created to manage formulas, the server and contributions we receive.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-cli">&lt;strong>ritchie-cli&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="standard-streams">&lt;strong>Standard Streams&lt;/strong>&lt;/h2>
+&lt;p>It refers to a communication channel that allows input and output interconnection between a computer program and its environment.&lt;/p>
+&lt;p>On Ritchie, we use the standard input (stdin) to execute commands automatically.&lt;/p></description></item><item><title>Reference: FAQ</title><link>https://zupit.github.io/docs-ritchie/reference/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/faq/</guid><description>
+&lt;hr>
+&lt;h2 id="about-ritchie">&lt;strong>About Ritchie&lt;/strong>&lt;/h2>
+&lt;h3 id="what-is-ritchie">&lt;strong>What is Ritchie?&lt;/strong>&lt;/h3>
+&lt;p>Ritchie is an &lt;strong>open source framework&lt;/strong> that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/about-ritchie/">&lt;strong>about Ritchie&lt;/strong>&lt;/a>&lt;/p>
+&lt;h3 id="what-does-ritchie-do">&lt;strong>What does Ritchie do?&lt;/strong>&lt;/h3>
+&lt;p>Ritchie creates automation commands to improve the operational &lt;strong>developers'&lt;/strong> &lt;strong>experience and brings beneficial such as:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Simplify repetitive and easy-to-execute tasks&lt;/li>
+&lt;li>Reduce the rework&lt;/li>
+&lt;li>Promote more time for the development team to focus on their deliveries.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation-and-use">&lt;strong>Installation and Use&lt;/strong>&lt;/h2>
+&lt;h3 id="how-to-install-ritchie">&lt;strong>How to install Ritchie?&lt;/strong>&lt;/h3>
+&lt;p>You can follow the installation step by step according do the operational system you&amp;rsquo;re using. Check out more in &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/getting-started/install-cli/">&lt;strong>installation section&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h3 id="how-to-create-a-new-formula-on-ritchie">&lt;strong>How to create a new formula on Ritchie?&lt;/strong>&lt;/h3>
+&lt;p>Using the command &lt;code>rit create formula&lt;/code> , you can create formulas using any programming language. Check out more in &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/create-formulas/">&lt;strong>create a formula section&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h3 id="how-to-create-formulas-on-an-existing-repository">&lt;strong>How to create formulas on an existing repository?&lt;/strong>&lt;/h3>
+&lt;p>Follow the next steps:&lt;/p>
+&lt;ol>
+&lt;li>Clone the repo;&lt;/li>
+&lt;li>Add the repo with &lt;code>rit add workspace&lt;/code> command;&lt;/li>
+&lt;li>Add the new formula with &lt;code>rit create formula&lt;/code> command and implement it.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-run-formulas">&lt;strong>How to run formulas?&lt;/strong>&lt;/h3>
+&lt;p>You can execute your formulas locally or through Docker. Check out more in &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/run-formulas/overview/">&lt;strong>run a formula section&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h3 id="how-to-build-formulas-on-ritchie">&lt;strong>How to build formulas on Ritchie?&lt;/strong>&lt;/h3>
+&lt;p>When you run a formula, a build is automatically made, you don&amp;rsquo;t need a command to do that.&lt;/p>
+&lt;h3 id="how-to-update-a-formula-from-a-repository">&lt;strong>How to update a formula from a repository?&lt;/strong>&lt;/h3>
+&lt;p>Follow the next steps:&lt;/p>
+&lt;ol>
+&lt;li>Locally clone the repo;&lt;/li>
+&lt;li>Add the repo with the &lt;code>rit add workspace&lt;/code> command;&lt;/li>
+&lt;li>Now, update the workspace.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-execute-a-formula-from-a-repository">&lt;strong>How to execute a formula from a repository?&lt;/strong>&lt;/h3>
+&lt;p>Use &lt;code>rit add repo &lt;/code> command to add the repository.&lt;/p>
+&lt;h3 id="how-to-publish-formulas-on-ritchie">&lt;strong>How to publish formulas on Ritchie?&lt;/strong>&lt;/h3>
+&lt;p>You can publish a formula by creating a Github&amp;rsquo;s, Gitlab&amp;rsquo;s or Bitbucket&amp;rsquo;s repository and adding a release version of this formula. Check out more in &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/publish-formulas/">&lt;strong>publish a formula section&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h2 id="community">&lt;strong>Community&lt;/strong>&lt;/h2>
+&lt;h3 id="how-to-submit-my-formula-on-communitys-repo">How to submit my formula on community&amp;rsquo;s repo?&lt;/h3>
+&lt;p>You just have to open a pull request on &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formula&amp;rsquo;s repository&lt;/strong> &lt;/a> with your formula suggestion.&lt;/p>
+&lt;h3 id="how-to-contribute">&lt;strong>How to contribute?&lt;/strong>&lt;/h3>
+&lt;p>You can contribute with improvements, suggestions or reporting bugs on&lt;a href="https://github.com/ZupIT/ritchie-cli"> &lt;strong>ritchie-cli&amp;rsquo;s repository.&lt;/strong> &lt;/a>That&amp;rsquo;s the process you should follow:&lt;/p>
+&lt;ol>
+&lt;li>Fork the repository&lt;/li>
+&lt;li>Create a branch: &lt;code>git checkout -b &amp;lt;branch_name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Implement your idea&lt;/li>
+&lt;li>Commit your implementation: &lt;code>git commit -m '&amp;lt;commit_message&amp;gt;'&lt;/code>&lt;/li>
+&lt;li>Push your branch: &lt;code>git push origin &amp;lt;project_name&amp;gt;/&amp;lt;location&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Open a pull request on the &lt;code>master&lt;/code> branch for analysis.&lt;/li>
+&lt;/ol></description></item></channel></rss>

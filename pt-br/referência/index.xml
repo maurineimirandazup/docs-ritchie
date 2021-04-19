@@ -223,6 +223,43 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 &lt;p>&lt;strong>&lt;code>repository&lt;/code>&lt;/strong> Você pode usar o repositório para fazer o download de fórmulas e consumi-las.&lt;/p>
 &lt;p>Os comandos para repos e workspaces são similares, ambos permitem o CLI &amp;lsquo;ver&amp;rsquo; as fórmulas disponíveis. Os workspaces possuem prioridade mais alta que os Repos (se você usar os dois comandos para os mesmos repositórios de fórmulas, os workspaces serão executados).&lt;/p>
 &lt;p>Veja mais sobre os comandos de workspace e repositórios na &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/">&lt;strong>lista de comandos e flags&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Referência: Release Notes</title><link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/release-notes/</guid><description>
-&lt;p>Veja os &lt;a href="https://github.com/ZupIT/ritchie-cli/releases">&lt;strong>Release Notes&lt;/strong>&lt;/a> do Ritchie.&lt;/p></description></item><item><title>Referência: Roadmap</title><link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</guid><description>
-&lt;p>Veja o roadmap do Ritchie no &lt;a href="https://github.com/ZupIT/ritchie-cli/issues">&lt;strong>Github&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Referência: Youtube</title><link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</guid><description>
+&lt;h2 id="onde-acompanhar">Onde acompanhar?&lt;/h2>
+&lt;p>Acompanhe as &lt;a href="https://github.com/ZupIT/ritchie-cli/releases">&lt;strong>Release Notes&lt;/strong>&lt;/a> do Ritchie.&lt;/p>
+&lt;h2 id="ritchie-10-e-ritchie-20">Ritchie 1.0 e Ritchie 2.0&lt;/h2>
+&lt;p>Diferenças entre as versões 1.0 e 2.0&lt;/p>
+&lt;ul>
+&lt;li>As versões Single e Team foram depreciadas. &lt;em>Dê uma olhada na dica abaixo se ainda quiser usar elas.&lt;/em>&lt;/li>
+&lt;li>A árvore de comando será gerada dinamicamente a partir dos repositórios adicionados. &lt;em>Ou seja, não será mais necessário alterar o arquivo tree.json manualmente.&lt;/em>&lt;/li>
+&lt;li>Não terá mais armazenamento de fórmulas na nuvem. &lt;em>O usuário poderá importar os repositórios do Github ou do Gitlab .&lt;/em> (&lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong>) __&lt;/li>
+&lt;li>Suporte para autocomplete para 2 novos Shells: &lt;strong>Fish&lt;/strong> e &lt;strong>Powershell&lt;/strong>. (&lt;strong>&lt;code>rit completion fish&lt;/code>&lt;/strong> | &lt;strong>&lt;code>rit completion powershell&lt;/code>&lt;/strong>)&lt;/li>
+&lt;li>Suporte para executar fórmulas em container. (&lt;strong>&lt;code>--docker flag&lt;/code>&lt;/strong>)&lt;/li>
+&lt;li>Suporte para fazer &amp;ldquo;build&amp;rdquo; de fórmulas no Windows.&lt;/li>
+&lt;li>Tutorial incorporado no CLI.&lt;/li>
+&lt;li>Melhorias estruturais.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-danger" role="alert">
+A versão 2.0 &lt;strong>não suporta o Vault&lt;/strong> para compartilhar credenciais. Logo, caso você queira continuar usando essa funcionalidade, precisará ficar na versão 1.0.
+&lt;/div>
+&lt;h2 id="como-migrar-fórmulas-da-versão-10-para-a-20">Como migrar fórmulas da versão 1.0 para a 2.0&lt;/h2>
+&lt;h3 id="contexto">&lt;strong>Contexto&lt;/strong>&lt;/h3>
+&lt;p>Se você usa a versão 1.0 do Ritchie e deseja migrar para a versão 2.0, &lt;strong>será necessário atualizar a estrutura dos seus repositórios de fórmulas&lt;/strong> para ser compatível com a nova versão.&lt;/p>
+&lt;h3 id="como-migrar">Como migrar?&lt;/h3>
+&lt;p>Abaixo, segue um &lt;strong>passo a passo&lt;/strong> de como você pode fazer isso:&lt;/p>
+&lt;p>&lt;strong>Passo 1&lt;/strong>: Crie um novo repositório do zero usando o comando rit create formula&lt;/p>
+&lt;ul>
+&lt;li>Adicionando as mesmas fórmulas usadas no repositório antigo, no repositório novo.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Passo 2&lt;/strong>: Exporte a implementação das fórmula do repositório antigo para o novo.&lt;/p>
+&lt;ul>
+&lt;li>A estrutura continua usando os mesmos arquivos: &lt;strong>&lt;code>config.json&lt;/code>&lt;/strong> , &lt;strong>&lt;code>main.*&lt;/code>&lt;/strong>, &lt;strong>&lt;code>formula.*&lt;/code>&lt;/strong>.&lt;/li>
+&lt;li>Copie o código da estrutura antiga para a nova, respeitando o novo layout.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Passo3&lt;/strong>: Publique o novo repositório de fórmulas no &lt;strong>github&lt;/strong> ou no &lt;strong>gitlab&lt;/strong> (pode ser &lt;strong>público&lt;/strong> ou &lt;strong>privado&lt;/strong>).&lt;/p>
+&lt;p>&lt;strong>Passo 4&lt;/strong>: Gere uma release desse repositório de fórmulas.&lt;/p>
+&lt;p>&lt;strong>Passo 5&lt;/strong>: Adicione o repositório de fórmulas no Ritchie usando o comando &lt;strong>&lt;code>rit add repo&lt;/code>&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Passo 6&lt;/strong>: Compartilhe seu repositório de fórmula com sua equipe, seus colegas ou a comunidade.&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+Em case de dúvida, fique à vontade para entrar em contato com a nossa equipe no e-mail &lt;strong>&lt;a href="mailto:ritchie@zup.com.br">ritchie@zup.com.br&lt;/a>&lt;/strong> ou &lt;strong>abrindo uma issue&lt;/strong> no repositório &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formulas&lt;/strong>&lt;/a>.
+&lt;/div></description></item><item><title>Referência: Roadmap</title><link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</guid><description>
+&lt;p>Acompanhe o roadmap do Ritchie no &lt;a href="https://github.com/ZupIT/ritchie-cli/issues">&lt;strong>Github&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Referência: Youtube</title><link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</guid><description>
 &lt;p>Veja o canal do Ritchie no &lt;a href="https://www.youtube.com/watch?v=GHrW68Nj358&amp;amp;list=PLkX9oUrQ1ev72KUhsB5gi80Y5Jb-DCV_F&amp;amp;index=1">&lt;strong>Youtube&lt;/strong>&lt;/a>.&lt;/p></description></item></channel></rss>

@@ -1,6 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Primeiros Passos</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/</link><description>Recent content in Primeiros Passos on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/index.xml" rel="self" type="application/rss+xml"/><item><title>Primeiros Passos: Instalação do CLI</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/introdu%C3%A7%C3%A3o-a-instala%C3%A7%C3%A3o-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/introdu%C3%A7%C3%A3o-a-instala%C3%A7%C3%A3o-cli/</guid><description>
-&lt;hr>
-&lt;p>Para começar a &lt;strong>instalação do Ritchie&lt;/strong> na sua máquina, siga as instruções para cada sistema operacional. Se preferir, é possível fazer ainda a instalação manual.&lt;/p></description></item><item><title>Primeiros Passos: Linux</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/linux/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Primeiros Passos</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/</link><description>Recent content in Primeiros Passos on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/index.xml" rel="self" type="application/rss+xml"/><item><title>Primeiros Passos: Instalação do CLI para Linux</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/linux/</guid><description>
 &lt;hr>
 &lt;h3 id="requisitos">&lt;strong>Requisitos&lt;/strong>&lt;/h3>
 &lt;p>Para instalar e usar o Ritchie no Linux na versão &lt;strong>&lt;code>2.0.5 ou anterior&lt;/code>&lt;/strong>, você deve ter o seguinte elemento configurado:&lt;/p>
@@ -13,12 +11,12 @@
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-info" role="alert">
-Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/">&lt;strong>instalação manual&lt;/strong>&lt;/a>
+Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/">&lt;strong>instalação manual&lt;/strong>&lt;/a>
 &lt;/div>
 &lt;h2 id="passo-2-verifique-a-instalação">Passo 2: Verifique a instalação&lt;/h2>
 &lt;p>Você pode confirmar se a instalação funcionou rodando esse comando:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit --version
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Macos</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/macos/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Instalação do CLI para Macos</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/macos/</guid><description>
 &lt;hr>
 &lt;p>Para instalar a &lt;strong>última versão do Ritchie&lt;/strong>, você precisa executar o comando abaixo no seu terminal. Porém, é importante ter em mente que &lt;strong>existem alguns requisitos&lt;/strong> antes de iniciar a instalação no MacOS.&lt;/p>
 &lt;h3 id="requisitos">&lt;strong>Requisitos&lt;/strong>&lt;/h3>
@@ -37,7 +35,7 @@ Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-info" role="alert">
-Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/">&lt;strong>instalação manual&lt;/strong>.&lt;/a>
+Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/">&lt;strong>instalação manual&lt;/strong>.&lt;/a>
 &lt;/div>
 &lt;h3 id="segunda-opção">Segunda opção&lt;/h3>
 &lt;p>Você pode também &lt;strong>baixar o&lt;/strong> &lt;strong>pacote do Ritchie CLI&lt;/strong> através da linha de comando abaixo, para &lt;strong>instalar ele manualmente&lt;/strong>.&lt;/p>
@@ -45,18 +43,18 @@ Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="passo-2-verifique-a-instalação">Passo 2: Verifique a instalação&lt;/h2>
 &lt;p>Você pode confirmar se a instalação funcionou rodando esse comando:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit --version
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Windows</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/windows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/windows/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Instalação do CLI para Windows</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/windows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/windows/</guid><description>
 &lt;hr>
 &lt;p>Para instalar a &lt;strong>última versão do Ritchie&lt;/strong>, você precisa fazer o &lt;strong>download do instalador&lt;/strong> e executá-lo no seu terminal.&lt;/p>
 &lt;h2 id="passo-1-faça-download-do-instalador">Passo 1: Faça download do instalador&lt;/h2>
 &lt;p>Você deve fazer o &lt;a href="https://commons-repo.ritchiecli.io/latest/ritchiecli.msi">&lt;strong>download do instalador&lt;/strong>&lt;/a> e fazer as configurações necessárias. Basta seguir as instruções que aparecerem no seu terminal.&lt;/p>
 &lt;div class="alert alert-info" role="alert">
-Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/">&lt;strong>instalação manual&lt;/strong>.&lt;/a>
+Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/">&lt;strong>instalação manual&lt;/strong>.&lt;/a>
 &lt;/div>
 &lt;h2 id="passo-2-verifique-a-instalação">Passo 2: Verifique a instalação&lt;/h2>
 &lt;p>Você pode confirmar se a instalação funcionou rodando esse comando:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit --version
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Instalação Manual</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Instalação Manual</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/</guid><description>
 &lt;hr>
 &lt;p>Caso você decida seguir com a instalação manual do Ritchie, é necessário obedecer à seguinte premissa: &lt;strong>baixar a versão mais recente do Ritchie informando a URL abaixo no seu navegador.&lt;/strong>&lt;/p>
 &lt;p>O link: &lt;a href="https://commons-repo.ritchiecli.io/stable.txt">https://commons-repo.ritchiecli.io/stable.txt&lt;/a>​&lt;/p>
@@ -110,7 +108,7 @@ source ~/.rit_completion​
 &lt;ol>
 &lt;li>Se o usuário &lt;strong>quer contribuir anonimamente&lt;/strong> as métricas do produto.&lt;/li>
 &lt;li>Se o usuário &lt;strong>quer adicionar as fórmulas&lt;/strong> da comunidade localmente.&lt;/li>
-&lt;li>Se o usuário &lt;strong>quer usar o&lt;/strong> &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/">&lt;strong>método de execução de fórmulas&lt;/strong>&lt;/a> &lt;strong>local ou via docker&lt;/strong>.&lt;/li>
+&lt;li>Se o usuário &lt;strong>quer usar o&lt;/strong> &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/executar-f%C3%B3rmulas/">&lt;strong>método de execução de fórmulas&lt;/strong>&lt;/a> &lt;strong>local ou via docker&lt;/strong>.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/rit-init%20%283%29.gif" alt="">&lt;/p>
 &lt;p>Após a execução desse comando, todos os arquivos de configuração para a máquina funcionar serão criados.&lt;/p>
