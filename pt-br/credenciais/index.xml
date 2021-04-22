@@ -20,7 +20,7 @@ Add a new
 ✔ Github credential saved!
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-info" role="alert">
-Você pode conferir os &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/">&lt;strong>arquivos editáveis das fórmulas&lt;/strong>&lt;/a> para ver como &lt;strong>manipular as credenciais definidas na sessão como parâmetros de input&lt;/strong> das fórmulas (no caso, inputs no config.json).
+Você pode conferir os &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/arquivo-config/#o-que-%C3%A9-um-arquivo-config-configjson-file">&lt;strong>arquivos editáveis das fórmulas&lt;/strong>&lt;/a> para ver como &lt;strong>manipular as credenciais definidas na sessão como parâmetros de input&lt;/strong> das fórmulas (no caso, inputs no config.json).
 &lt;/div></description></item><item><title>Credenciais: Apagar credenciais</title><link>https://zupit.github.io/docs-ritchie/pt-br/credenciais/apagar-credenciais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/credenciais/apagar-credenciais/</guid><description>
 &lt;hr>
 &lt;h2 id="como-apagar">Como apagar?&lt;/h2>
@@ -30,7 +30,7 @@ Você pode conferir os &lt;a href="https://zupit.github.io/docs-ritchie/docs-rit
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs/large-gif-814x408-.gif" alt="">&lt;/p>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:&lt;/p>
-&lt;p>👉 Vá para seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/credenciais/adicionar-provedores/">&lt;strong>como adicionar provedores&lt;/strong> &lt;/a> e, assim, continuar configurando suas credenciais.&lt;/p>
+&lt;p>👉 Vá para seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/credenciais/adicionar-provedores/">&lt;strong>como adicionar provedores&lt;/strong> &lt;/a> e, assim, continuar configurando suas credenciais.&lt;/p>
 &lt;p>👉 Conheça a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/">&lt;strong>lista de comandos&lt;/strong>&lt;/a> de fórmulas disponíveis no Ritchie.&lt;/p></description></item><item><title>Credenciais: Adicionar provedores</title><link>https://zupit.github.io/docs-ritchie/pt-br/credenciais/adicionar-provedores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/credenciais/adicionar-provedores/</guid><description>
 &lt;hr>
 &lt;p>É possível também configurar o Ritchie para adicionar novos provedores no seu espaço de trabalho. Para fazer isso, basta selecionar a opção &amp;ldquo;&lt;strong>Add a new&lt;/strong>&amp;rdquo; rodando o comando &lt;strong>&lt;code>rit set credential&lt;/code>&lt;/strong>.&lt;/p>

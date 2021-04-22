@@ -91,16 +91,17 @@ In that case, you won&amp;rsquo;t need to have Golang installed.
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="case-5-with-stdin">Case 5: With Stdin&lt;/h3>
 &lt;p>You can also run the command with the &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong> (Standard input) flag. This way, inputs parameters are also informed directly with the command line.&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
 Ritchie uses the &lt;strong>JSON&lt;/strong> format to execute STDIN commands
-{{% /alert %}}&lt;/p>
+&lt;/div>
 &lt;h3 id="case-6-with-stdin-and-docker">Case 6: With Stdin and Docker&lt;/h3>
 &lt;p>When you combine both &amp;ndash;stdin and &amp;ndash;docker flags, it is also possible to run a command remotely (on a container) with the input parameters directly informed on the command line:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin --docker
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-info" role="alert">
 Take a look at the formulas repositories &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>(ex: ritchie-formulas)&lt;/strong>&lt;/a>.
-Most of the community formulas are composed of a &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world">&lt;strong>README&lt;/strong>&lt;/a> explaining what the command does and how to run it.
+Most of the community formulas are composed of a &lt;a href="https://github.com/ZupIT/ritchie-formulas#readme">&lt;strong>README&lt;/strong>&lt;/a> explaining what the command does and how to run it.
 &lt;/div>
 &lt;p>In this section, you saw how to run formulas on Ritchie. To keep learning:&lt;/p>
 &lt;ul>
@@ -153,7 +154,7 @@ Most of the community formulas are composed of a &lt;a href="https://github.com/
 ]
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="next-steps">Next steps&lt;/h2>
 &lt;p>On this section, you saw how to create a formula on Ritchie and test it. To keep configuring the formula:&lt;/p>
-&lt;p>👉 Go to &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/formulas/build-formulas/">&lt;strong>build a formula&lt;/strong>&lt;/a> to see how to continue the tests on the formulas you create.&lt;/p></description></item><item><title>Formulas: Organize the formula folder</title><link>https://zupit.github.io/docs-ritchie/formulas/organize-the-formula-folder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/formulas/organize-the-formula-folder/</guid><description>
+&lt;p>👉 Go to &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/formulas/organize-the-formula-folder/">&lt;strong>organize the formula folder&lt;/strong>&lt;/a> to see how to organize the formulas you create.&lt;/p></description></item><item><title>Formulas: Organize the formula folder</title><link>https://zupit.github.io/docs-ritchie/formulas/organize-the-formula-folder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/formulas/organize-the-formula-folder/</guid><description>
 &lt;hr>
 &lt;h2 id="what-is-the-formula-folder">What is the formula folder?&lt;/h2>
 &lt;p>This folder contains the files with the formula&amp;rsquo;s behavior.&lt;/p>
@@ -837,7 +838,7 @@ xcode Manage xcode objects
 &lt;h3 id="1-premisse">1. Premisse&lt;/h3>
 &lt;p>To group formulas, it is necessary to use &lt;strong>Standard Inputs&lt;/strong>. On the following page, we have a detailed explanation to how this works:&lt;/p>
 &lt;h3 id="2-execution-a-id2-executiona">2. Execution &lt;a id="2-execution">&lt;/a>&lt;/h3>
-&lt;p>When &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/how-to/formulas/configure-inputs/">&lt;strong>implementing a formula&lt;/strong>&lt;/a>, the file where the operation is coded needs to execute a command line associated to a formula.‌&lt;/p>
+&lt;p>When &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/formulas/configure-inputs/">&lt;strong>implementing a formula&lt;/strong>&lt;/a>, the file where the operation is coded needs to execute a command line associated to a formula.‌&lt;/p>
 &lt;p>The grouped formula command line needs to be executed using &lt;strong>Standard Inputs&lt;/strong>, which means informing the inputs parameters directly on the code.‌&lt;/p>
 &lt;h3 id="3-example-a-id3-examplea">3. Example &lt;a id="3-example">&lt;/a>&lt;/h3>
 &lt;p>The &lt;strong>&lt;code>rit publish repo&lt;/code>&lt;/strong> formula has been implemented using formula aggregation, that you can find its &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/publish/repo">&lt;strong>formula implementation&lt;/strong>&lt;/a>.&lt;/p>

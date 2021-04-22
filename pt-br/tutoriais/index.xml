@@ -6,7 +6,7 @@
 &lt;ol>
 &lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/executar-f%C3%B3rmulas/">&lt;strong>Como executar fórmulas&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/criar-f%C3%B3rmulas/">&lt;strong>Como criar fórmulas&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/f%C3%B3rmulas/buildar-formulas/">&lt;strong>Como &amp;ldquo;buildar&amp;rdquo; fórmulas&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/buildar-formulas/">&lt;strong>Como &amp;ldquo;buildar&amp;rdquo; fórmulas&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/">&lt;strong>Como encapsular formulas&lt;/strong>&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="tutoriais">Tutoriais&lt;/h3>
@@ -86,7 +86,7 @@ Sugestão de comando: &lt;strong>&lt;code>rit github get user&lt;/code>&lt;/stro
 &lt;h2 id="objetivo">Objetivo&lt;/h2>
 &lt;p>Neste tutorial, a ideia é criar uma fórmula que vai &lt;strong>retornar a ferramenta selecionada pelo usuário de acordo com seu perfil&lt;/strong>.&lt;/p>
 &lt;blockquote>
-&lt;p>Você encontrará todas as informações necessárias na seção do tutorial &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/arquivo-config/">&lt;strong>relacionada ao arquivo config.json&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Você encontrará todas as informações necessárias na seção do tutorial &lt;a href="//docs-ritchie/pt-br/f%C3%B3rmulas/arquivo-config/#o-que-%C3%A9-um-arquivo-config-configjson-file">&lt;strong>relacionada ao arquivo config.json&lt;/strong>&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;div class="alert alert-info" role="alert">
 Sugestão de comando: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
@@ -112,12 +112,12 @@ Sugestão de comando: &lt;strong>&lt;code>rit get tools&lt;/code>&lt;/strong>
 &lt;li>Instale a ferramenta selecionada de acordo com o SO do computador.&lt;/li>
 &lt;/ul>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>👉 Se você completou o terceiro desafio, vamos para o &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/">&lt;strong>desafio nível 4&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Tutoriais: Avançado</title><link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/avan%C3%A7ado/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/avan%C3%A7ado/</guid><description>
+&lt;p>👉 Se você completou o terceiro tutorial, vamos para o &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/avan%C3%A7ado/">&lt;strong>tutorial avançado&lt;/strong>&lt;/a>!&lt;/p></description></item><item><title>Tutoriais: Avançado</title><link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/avan%C3%A7ado/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/avan%C3%A7ado/</guid><description>
 &lt;h1 id="avançado-encapsulamento">Avançado: Encapsulamento&lt;/h1>
 &lt;h2 id="objetivo">Objetivo&lt;/h2>
 &lt;p>Neste tutorial, a ideia é criar uma fórmula que vai &lt;strong>encapsular outra fórmula dentro dela&lt;/strong>.&lt;/p>
 &lt;blockquote>
-&lt;p>Você encontrará todas as informações necessárias na seção do tutorial sobre&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/como/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/"> &lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Você encontrará todas as informações necessárias na seção do tutorial sobre&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/encapsular-f%C3%B3rmulas/"> &lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;p>A ideia é encapsular pelo menos 2 fórmulas dentro de uma outra:&lt;/p>
 &lt;ul>
