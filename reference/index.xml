@@ -260,7 +260,10 @@ If you have any question, feel free to contact our team at &lt;strong>&lt;a href
 &lt;ul>
 &lt;li>Ritchie&amp;rsquo;s roadmap on &lt;a href="https://github.com/ZupIT/ritchie-cli/issues">&lt;strong>Github&lt;/strong>&lt;/a>.&lt;/li>
 &lt;li>Check out Ritchie&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=GHrW68Nj358&amp;amp;list=PLkX9oUrQ1ev72KUhsB5gi80Y5Jb-DCV_F&amp;amp;index=1">&lt;strong>Youtube&lt;/strong>&lt;/a> channel.&lt;/li>
-&lt;/ul></description></item><item><title>Reference: About Ritchie</title><link>https://zupit.github.io/docs-ritchie/reference/about-ritchie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/about-ritchie/</guid><description>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">
+The Youtube channel, for now, has only Portuguese content.
+&lt;/div></description></item><item><title>Reference: About Ritchie</title><link>https://zupit.github.io/docs-ritchie/reference/about-ritchie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/reference/about-ritchie/</guid><description>
 &lt;hr>
 &lt;h2 id="where-ritchie-came-from">&lt;strong>Where Ritchie came from?&lt;/strong>&lt;/h2>
 &lt;p>Ritchie&amp;rsquo;s objective is to improve the developer’s experience, bringing them more autonomy, automating and simplifying the execution of commands that are widely used in the process of creating and developing digital products. Its name is a tribute to &lt;strong>Dennis Ritchie&lt;/strong>, one of the creators of Unix (predecessor of Linux) and also of the C language. One of the pioneer of the digital world as we know it today.&lt;/p>
