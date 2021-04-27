@@ -24,7 +24,7 @@ Access on Docker:&lt;/p>
 &lt;ul>
 &lt;li>Preferences &amp;gt; Command Line&amp;gt; Enable cloud experience.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/static/ritchiedocker.PNG" alt="">&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/unnamed-removebg-preview.png" alt="">&lt;/p>
 &lt;/div>
 &lt;h3 id="3-local--docker-flags">3. Local &amp;amp; Docker Flags&lt;/h3>
 &lt;p>You can force Ritchie CLI to execute a formula with a specific method using flags.&lt;/p>
@@ -66,7 +66,7 @@ You can also check which repositories you&amp;rsquo;re using with the &lt;strong
 &lt;li>Via Stdin e Docker&lt;/li>
 &lt;/ol>
 &lt;p>To do so, type the following commands lines:&lt;/p>
-&lt;h3 id="case-1-with-prompt">Case 1: With Prompt&lt;/h3>
+&lt;h3 id="case-1-with-prompt">&lt;strong>Case 1:&lt;/strong> With Prompt&lt;/h3>
 &lt;div class="alert alert-warning" role="alert">
 As this formula has been coded using Golang, it is necessary to have Golang installed on your computer to run it locally.
 &lt;/div>
@@ -74,7 +74,7 @@ As this formula has been coded using Golang, it is necessary to have Golang inst
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Select an option for each input parameter and see how the magic works:&lt;/p>
 &lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-1054x366-.gif" alt="">&lt;/p>
 &lt;p>This is the default command line execution, that runs the formula locally using &lt;strong>prompt&lt;/strong> to inform the input parameters.&lt;/p>
-&lt;h3 id="case-2-with-prompt-and-docker">Case 2: With Prompt and Docker&lt;/h3>
+&lt;h3 id="case-2-with-prompt-and-docker">&lt;strong>Case 2:&lt;/strong> With Prompt and Docker&lt;/h3>
 &lt;p>You can run the same command using the &lt;strong>&amp;ndash;docker&lt;/strong> flag pto execute it remotely (on a container), but still using &lt;strong>prompt&lt;/strong> to inform the inputs parameters:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit demo hello-world --docker
 &lt;/code>&lt;/pre>&lt;/div>
@@ -82,20 +82,20 @@ As this formula has been coded using Golang, it is necessary to have Golang inst
 Docker needs to be installed and running on your computer for this flag to work.
 In that case, you won&amp;rsquo;t need to have Golang installed.
 &lt;/div>
-&lt;h3 id="case-3-with-input-flags">Case 3: With Input Flags&lt;/h3>
+&lt;h3 id="case-3-with-input-flags">&lt;strong>Case 3:&lt;/strong> With Input Flags&lt;/h3>
 &lt;p>You can also run the command informing the inputs through flags (you can know which flags are available using the &lt;strong>&lt;code>--help&lt;/code>&lt;/strong> flag when executing a command). This way, inputs parameters are informed directly with the command line.&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="case-4-with-input-flags-and-docker">Case 4: With Input flags and Docker&lt;/h3>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="case-4-with-input-flags-and-docker">&lt;strong>Case 4:&lt;/strong> With Input flags and Docker&lt;/h3>
 &lt;p>When you combine both &lt;strong>&lt;code>input flags&lt;/code>&lt;/strong> and the &lt;strong>&lt;code>--docker&lt;/code>&lt;/strong> flag, it is possible to run a command remotely (on a container) with the input parameters directly informed on the command line:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie --docker
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="case-5-with-stdin">Case 5: With Stdin&lt;/h3>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="case-5-with-stdin">&lt;strong>Case 5:&lt;/strong> With Stdin&lt;/h3>
 &lt;p>You can also run the command with the &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong> (Standard input) flag. This way, inputs parameters are also informed directly with the command line.&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-warning" role="alert">
 Ritchie uses the &lt;strong>JSON&lt;/strong> format to execute STDIN commands
 &lt;/div>
-&lt;h3 id="case-6-with-stdin-and-docker">Case 6: With Stdin and Docker&lt;/h3>
+&lt;h3 id="case-6-with-stdin-and-docker">&lt;strong>Case 6:&lt;/strong> With Stdin and Docker&lt;/h3>
 &lt;p>When you combine both &amp;ndash;stdin and &amp;ndash;docker flags, it is also possible to run a command remotely (on a container) with the input parameters directly informed on the command line:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin --docker
 &lt;/code>&lt;/pre>&lt;/div>
@@ -299,7 +299,7 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &lt;li>&lt;strong>text&lt;/strong> (string),&lt;/li>
 &lt;li>&lt;strong>bool&lt;/strong> (boolean),&lt;/li>
 &lt;li>&lt;strong>password&lt;/strong> (hidden string on CLI),&lt;/li>
-&lt;li>**credentials** &lt;em>(specific type, learn more information_ &lt;/em>&lt;strong>here&lt;/strong>_&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/credentials/use-credentials-as-formula-inputs/">&lt;/a>&lt;em>),&lt;/em>&lt;/li>
+&lt;li>&lt;strong>credentials&lt;/strong> (specific type, learn more information_ &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/credentials/use-credentials-as-formula-inputs/">&lt;em>&lt;strong>here&lt;/strong>&lt;/em>&lt;/a>_),&lt;/li>
 &lt;li>&lt;strong>dynamic&lt;/strong> &lt;em>(associated with the optional &lt;code>request_info&lt;/code> field below),&lt;/em>&lt;/li>
 &lt;li>&lt;strong>path:&lt;/strong> enables the autocomplete to inform a path to a folder or a file (string).&lt;/li>
 &lt;/ul>
@@ -328,7 +328,7 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &amp;#34;Friday&amp;#34;
 ]
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="some-observations-regarding-the-multiselect-type">Some observations regarding the &lt;strong>&lt;code>multiselect&lt;/code> type&lt;/strong>&lt;/h4>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="some-observations-regarding-the-multiselect-type">Some observations regarding the &lt;strong>&lt;code>multiselect&lt;/code> type&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>To select one of the options with the &lt;code>multiselect&lt;/code> type, you must press the &lt;code>space&lt;/code> key (the &lt;code>enter&lt;/code> key will move to the next input, if any)&lt;/p>
@@ -478,7 +478,7 @@ The &lt;strong>&lt;code>dynamic input&lt;/code>&lt;/strong> type will be &lt;str
 &lt;div class="alert alert-info" role="alert">
 Each formula can contain as many inputs as necessary, as well as any association of the above fields.
 &lt;/div>
-&lt;p>&lt;strong>Conditional input example with Regex pattern:&lt;/strong>&lt;/p>
+&lt;h3 id="conditional-input-example-with-regex-pattern">&lt;strong>Conditional input example with Regex pattern:&lt;/strong>&lt;/h3>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;inputs&amp;#34;: [
 {
 &amp;#34;label&amp;#34;: &amp;#34;Select a system:&amp;#34;,

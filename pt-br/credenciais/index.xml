@@ -60,7 +60,7 @@ Esse provedor, assim como suas informações, serão salvas de forma permanente 
 &lt;li>&lt;strong>Type:&lt;/strong> Nomenclatura específica para o CLI saber qual credencial usar.&lt;/li>
 &lt;/ol>
 &lt;div class="alert alert-danger" role="alert">
-O &lt;strong>tipo&lt;/strong> precisa respeitar o seguinte padrão:&lt;strong>&lt;code>CREDENTIAL_PROVIDER_VARIABLE&lt;/code>&lt;/strong>
+O &lt;strong>tipo&lt;/strong> precisa respeitar o seguinte padrão: &lt;strong>&lt;code>CREDENTIAL_PROVIDER_VARIABLE&lt;/code>&lt;/strong>
 &lt;/div>
 &lt;p>Por exemplo, para usar as credenciais do &lt;strong>&lt;code>GITHUB&lt;/code>&lt;/strong> como parâmetros, você precisa informá-las no arquivo &lt;strong>&lt;code>config.json&lt;/code>&lt;/strong> da fórmula:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;inputs&amp;#34;: [

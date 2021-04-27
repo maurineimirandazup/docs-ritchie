@@ -26,8 +26,8 @@ Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io
 &lt;li>Ferramentas &lt;em>5sum&lt;/em>*&lt;/li>
 &lt;/ul>
 &lt;div class="alert alert-warning" role="alert">
-&lt;p>Para instalar &lt;em>5sum&lt;/em>* com _**Homebrew**_ , use: &lt;code>brew install5sha1sum&lt;/code>&lt;/p>
-&lt;p>Para instalar &lt;em>5sum&lt;/em>* com _**MacPorts**_ , use: &lt;code>sudo port install5sha1sum&lt;/code>&lt;/p>
+&lt;p>Para instalar &lt;strong>5sum&lt;/strong> with &lt;em>&lt;strong>Homebrew&lt;/strong>&lt;/em> , use: &lt;code>brew install5sha1sum&lt;/code>&lt;/p>
+&lt;p>Para instalar &lt;strong>5sum&lt;/strong> with &lt;em>&lt;strong>MacPorts&lt;/strong>&lt;/em> , use: &lt;code>sudo port install5sha1sum&lt;/code>&lt;/p>
 &lt;/div>
 &lt;h2 id="passo-1-rode-o-comando-de-instalação">Passo 1: Rode o comando de instalação&lt;/h2>
 &lt;h3 id="primeira-opção">Primeira opção&lt;/h3>
@@ -57,7 +57,7 @@ Se preferir, você também pode seguir com a &lt;a href="https://zupit.github.io
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Se tudo estiver configurado, o terminal irá retornar o número da versão atual do Ritchie.&lt;/p></description></item><item><title>Primeiros Passos: Instalação Manual</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-manual/</guid><description>
 &lt;hr>
 &lt;p>Caso você decida seguir com a instalação manual do Ritchie, é necessário obedecer à seguinte premissa: &lt;strong>baixar a versão mais recente do Ritchie informando a URL abaixo no seu navegador.&lt;/strong>&lt;/p>
-&lt;p>O link: &lt;a href="https://commons-repo.ritchiecli.io/stable.txt">https://commons-repo.ritchiecli.io/stable.txt&lt;/a>​&lt;/p>
+&lt;p>O link: &lt;a href="https://commons-repo.ritchiecli.io/stable.txt">&lt;strong>https://commons-repo.ritchiecli.io/stable.txt&lt;/strong>&lt;/a>​&lt;/p>
 &lt;p>Quando você indica a URL acima no navegador, o sistema retorna a última versão do Ritchie. Por exemplo, poderá retornar algo como &lt;strong>1.0.1 ou 2.0.1&lt;/strong>&lt;/p>
 &lt;h2 id="como-instalar">&lt;strong>Como instalar?&lt;/strong>&lt;/h2>
 &lt;p>Faça o download da versão binária do Ritchie ao entrar na URL que você já digitou no seu navegador e informe a &lt;strong>versão {VERSION}&lt;/strong> que você obteve no passo anterior.&lt;/p>
@@ -97,8 +97,8 @@ source ~/.rit_completion​
 &lt;p>É possível - e recomendado - que você crie uma variável de ambiente para o rit, tornando assim mais fácil o uso do CLI.&lt;/p>
 &lt;p>Abaixo, confira alguns artigos que explicam como adicionar uma variável de ambiente no Windows:&lt;/p>
 &lt;ul>
-&lt;li>Adicionando &lt;a href="https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/">&lt;strong>através da interface&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>Adicionando &lt;a href="https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente">&lt;strong>através do terminal&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>Adicionando &lt;a href="https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/">&lt;strong>por meio da interface&lt;/strong>&lt;/a>.&lt;/li>
+&lt;li>Adicionando &lt;a href="https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente">&lt;strong>por meio do terminal&lt;/strong>&lt;/a>.&lt;/li>
 &lt;/ul></description></item><item><title>Primeiros Passos: Inicialização do CLI</title><link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/inicializa%C3%A7%C3%A3o-do-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/inicializa%C3%A7%C3%A3o-do-cli/</guid><description>
 &lt;hr>
 &lt;h2 id="passo-1-inicialização">Passo 1: Inicialização&lt;/h2>

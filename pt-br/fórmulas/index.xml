@@ -15,17 +15,17 @@
 &lt;h3 id="2-execução-via-docker">2. Execução via Docker&lt;/h3>
 &lt;p>Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o &lt;strong>&lt;code>DOCKER&lt;/code>&lt;/strong> esteja instalado e iniciado.&lt;/p>
 &lt;div class="alert alert-info" role="alert">
-Para ver melhor como essa execução funciona na prática, confira a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/executar-uma-f%C3%B3rmula-hello-world/">&lt;strong>seção fórmula hello world&lt;/strong> &lt;/a> para ver como isso funciona na prática.
+Para ver melhor como essa execução funciona na prática, confira a &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/executar-uma-f%C3%B3rmula-hello-world/">&lt;strong>seção fórmula hello world&lt;/strong> &lt;/a>.
 &lt;/div>
 &lt;div class="alert alert-warning" role="alert">
 &lt;p>&lt;strong>Usuários do Docker no MacOS:&lt;/strong>
 Para evitar o &lt;strong>&amp;lsquo;Error: exit status 1&amp;rsquo;&lt;/strong>, é preciso &lt;strong>desativar&lt;/strong> o Cloud Experience, dependendo da sua versão.&lt;/p>
-&lt;p>Veja como:
-Acesse no Docker:&lt;/p>
+&lt;p>Veja como:&lt;/p>
+&lt;p>Acesse no Docker:&lt;/p>
 &lt;ul>
 &lt;li>Preferences &amp;gt; Command Line&amp;gt; Enable cloud experience.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/static/ritchiedocker.PNG" alt="">&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/unnamed-removebg-preview.png" alt="">&lt;/p>
 &lt;/div>
 &lt;h3 id="3-local--docker-flags">3. Local &amp;amp; Docker Flags&lt;/h3>
 &lt;p>É possível forçar o Ritchie CLI a executar uma fórmula seguindo um método de execução específico, usando flags.&lt;/p>
@@ -333,7 +333,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &amp;#34;Friday&amp;#34;
 ]
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="algumas-observações-a-respeito-o-tipo-multiselect">Algumas observações a respeito o tipo &lt;strong>&lt;code>multiselect&lt;/code>&lt;/strong>&lt;/h4>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="algumas-observações-a-respeito-o-tipo-multiselect">Algumas observações a respeito o tipo &lt;strong>&lt;code>multiselect&lt;/code>&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>Para selecionar uma das opções com tipo &lt;code>multiselect&lt;/code>, você deve apertar a chave &lt;code>space&lt;/code> (a chave&lt;code>enter&lt;/code> irá mover para o próximo parâmetro de entrada, se houver).&lt;/p>
@@ -486,7 +486,7 @@ O tipo de &lt;strong>&lt;code>entrada dinâmico&lt;/code>&lt;/strong> será &lt;
 &lt;div class="alert alert-info" role="alert">
 Cada fórmula contém quantos parâmetros de entrada forem necessários, assim como qualquer associação nos campos acima.
 &lt;/div>
-&lt;p>&lt;strong>Exemplo de parâmetros de entrada com campo condicional e padrão Regex:&lt;/strong>&lt;/p>
+&lt;h4 id="exemplo-de-parâmetros-de-entrada-com-campo-condicional-e-padrão-regex">&lt;strong>Exemplo de parâmetros de entrada com campo condicional e padrão Regex:&lt;/strong>&lt;/h4>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;inputs&amp;#34;: [
 {
 &amp;#34;label&amp;#34;: &amp;#34;Select a system:&amp;#34;,
