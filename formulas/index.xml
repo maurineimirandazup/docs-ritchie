@@ -772,6 +772,43 @@ As shown on the example above, you can check if the publication has been success
 &lt;/ol>
 &lt;h2 id="next-steps">Next steps&lt;/h2>
 &lt;p>On this section, you saw how to publish a formula on Ritchie. To keep configuring the formula:&lt;/p>
+&lt;p>👉 Check out &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/formulas/share-formulas/">&lt;strong>how to share formulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Formulas: Rename formulas</title><link>https://zupit.github.io/docs-ritchie/formulas/rename-formulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/formulas/rename-formulas/</guid><description>
+&lt;hr>
+&lt;h2 id="how-to-rename">How to rename?&lt;/h2>
+&lt;h3 id="premisses">Premisses&lt;/h3>
+&lt;div class="alert alert-warning" role="alert">
+Only local formulas can be renamed.
+&lt;/div>
+&lt;h2 id="renaming-your-formula">Renaming your formula&lt;/h2>
+&lt;p>You can use the core command &lt;strong>&lt;code>rit rename formula&lt;/code>&lt;/strong> to rename a local formula. The required input parameters are:&lt;/p>
+&lt;ol>
+&lt;li>The name of the old formula;&lt;/li>
+&lt;li>The new formula name.&lt;/li>
+&lt;/ol>
+&lt;p>Example: &lt;code>rit group old&lt;/code> &amp;gt; &lt;code>rit group new&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/rit-rename-formula.gif" alt="">&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+&lt;ul>
+&lt;li>Ritchie will automatically identify the workspace to which the formula belongs.
+&lt;ul>
+&lt;li>If you identify more than one workspace with the entered formula, an extra necessary step will be to choose in which workspace the formula should have its name changed.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>This formula includes entry via &lt;em>flag&lt;/em>, more information at &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/en/standard-inputs/core-commands/#formula-commands">**Core Commands &amp;gt; Formula commands **&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="effects">Effects&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>All files that identify the formula will be changed to the new formula name&lt;/p>
+&lt;p>&lt;em>these changes reflect both in Ritchie&amp;rsquo;s internal control folders and in the workspace folder (whether it is the default or custom)&lt;/em>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ritchie&amp;rsquo;s autocompleted will only identify the new formula name.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="next-steps">Next steps&lt;/h2>
+&lt;p>In this section, you saw how to rename a formula on Ritchie. To keep configuring the formula:&lt;/p>
 &lt;p>👉 Check out &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/formulas/share-formulas/">&lt;strong>how to share formulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Formulas: Share formulas</title><link>https://zupit.github.io/docs-ritchie/formulas/share-formulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/formulas/share-formulas/</guid><description>
 &lt;hr>
 &lt;h2 id="how-to-share">How to share?&lt;/h2>

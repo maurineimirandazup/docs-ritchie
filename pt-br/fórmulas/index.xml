@@ -732,13 +732,13 @@ Caso esteja usando uma versão anterior, basta seguir as orientações desta se�
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Fórmulas: Publicar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/f%C3%B3rmulas/publicar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/f%C3%B3rmulas/publicar-f%C3%B3rmulas/</guid><description>
 &lt;hr>
 &lt;h2 id="como-publicar">Como publicar?&lt;/h2>
-&lt;p>Existe uma fórmula no Ritchie que permite você criar/atualizar o repositório de fórmulas no Github e/ou Gitblab.&lt;/p>
+&lt;p>Existe uma fórmula no Ritchie que permite você criar/atualizar o repositório de fórmulas no Github e/ou Gitlab.&lt;/p>
 &lt;h3 id="premissas">Premissas&lt;/h3>
 &lt;div class="alert alert-warning" role="alert">
 Para publicar um repositório, é necessário configurar as credenciais do Github e/ou Gitlab usando o comando &lt;strong>&lt;code>rit set credential.&lt;/code>&lt;/strong>
 &lt;/div>
 &lt;h2 id="publicando-seu-repositório">Publicando seu repositório&lt;/h2>
-&lt;p>Você pode usar uma a fórmula que foi criada no repositório da comunidade para fazer:&lt;/p>
+&lt;p>Você pode usar uma fórmula que foi criada no repositório da comunidade para fazer:&lt;/p>
 &lt;ul>
 &lt;li>A inicialização em um repositório local do Git (se necessário).&lt;/li>
 &lt;li>A criação do repositório no Github e/ou Gitlab,&lt;/li>
@@ -769,7 +769,8 @@ Como demonstrado acima, você pode checar se a publicação deu certo usando o c
 &lt;p>&lt;em>Ele pode ser criado a partir de um repositório local ou de um repositório clonado.&lt;/em>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Adicione sua fórmula ao repositório _Para isso, use o comando &lt;strong>&lt;code>rit create formula&lt;/code>&lt;/strong> ou copie /cole as pastas. _&lt;/p>
+&lt;p>Adicione sua fórmula ao repositório.&lt;/p>
+&lt;p>&lt;em>Para isso, use o comando &lt;strong>&lt;code>rit create formula&lt;/code>&lt;/strong> ou copie /cole as pastas.&lt;/em>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Faça o commit e submeta o novo código ao repositório do Github e/ou Gitlab.&lt;/p>
@@ -780,6 +781,43 @@ Como demonstrado acima, você pode checar se a publicação deu certo usando o c
 &lt;/ol>
 &lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
 &lt;p>Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
+&lt;p>👉 Veja a seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/">&lt;strong>como compartilhar fórmulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Fórmulas: Renomear fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/f%C3%B3rmulas/renomear-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/f%C3%B3rmulas/renomear-f%C3%B3rmulas/</guid><description>
+&lt;hr>
+&lt;h2 id="como-renomear">Como renomear?&lt;/h2>
+&lt;h3 id="premissas">Premissas&lt;/h3>
+&lt;div class="alert alert-warning" role="alert">
+Somente fórmulas locais podem ser renomeadas.
+&lt;/div>
+&lt;h2 id="renomeando-sua-fórmula">Renomeando sua fórmula&lt;/h2>
+&lt;p>Você pode usar o comando core do Ritchie &lt;strong>&lt;code>rit rename formula&lt;/code>&lt;/strong> para renomear uma fórmula local. Os parâmetros de entrada necessários são:&lt;/p>
+&lt;ol>
+&lt;li>O nome da fórmula antiga;&lt;/li>
+&lt;li>O novo nome da fórmula.&lt;/li>
+&lt;/ol>
+&lt;p>Exemplo: &lt;code>rit group old&lt;/code> &amp;gt; &lt;code>rit group new&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/docs-ritchie/docs-ritchie/rit-rename-formula.gif" alt="">&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+&lt;ul>
+&lt;li>O Ritchie identificará automaticamente o workspace a qual a fórmula pertence.
+&lt;ul>
+&lt;li>Caso identifique mais de um workspace com a fórmula informada, um passo extra necessário será executado pelo Ritchie para escolha do workspace a qual deve ter a fórmula renomeada.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Essa fórmula possui entrada via &lt;em>flags&lt;/em>, mais informações em &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/standard-inputs/comandos-core/#comandos-de-f%C3%B3rmula">&lt;strong>Commandos core &amp;gt; Comandos de fórmula&lt;/strong>&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="efeitos">Efeitos&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Todos os arquivos que identificam a fórmula serão alterados para o novo nome da fórmula&lt;/p>
+&lt;p>&lt;em>essas alterações refletirão tanto nas pastas internas de controle do Ritchie, quanto na pasta do workspace (sendo ele o default ou personalizado)&lt;/em>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>O autocomplete do Ritchie identificará somente o novo nome de fórmula.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
+&lt;p>Nessa seção, você viu como renomear uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
 &lt;p>👉 Veja a seção &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/">&lt;strong>como compartilhar fórmulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Fórmulas: Compartilhar fórmulas</title><link>https://zupit.github.io/docs-ritchie/pt-br/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/docs-ritchie/pt-br/f%C3%B3rmulas/compartilhar-f%C3%B3rmulas/</guid><description>
 &lt;hr>
 &lt;h2 id="como-compartilhar">Como compartilhar?&lt;/h2>

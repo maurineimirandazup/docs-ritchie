@@ -16,7 +16,7 @@
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:left">rit upgrade&lt;/td>
-&lt;td style="text-align:left">upgrade da última versão estável do Ritchie&lt;/td>
+&lt;td style="text-align:left">atualiza o Ritchie para a última versão estável&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:left">rit tutorial&lt;/td>
@@ -60,29 +60,29 @@
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="comandos-de-fórmulas">Comandos de Fórmulas&lt;/h3>
-&lt;table>
+&lt;table style="text-align:left">
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:left">Comandos&lt;/th>
-&lt;th style="text-align:left">Opera&amp;#xE7;&amp;#xE3;o&lt;/th>
+&lt;th>Comandos&lt;/th>
+&lt;th>Operação&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:left">rit create formula&lt;/td>
-&lt;td style="text-align:left">
-&lt;p>cria uma nova f&amp;#xF3;rmula do zero&lt;/p>
-&lt;p>(como tamb&amp;#xE9;m um novo reposit&amp;#xF3;rio local, se necess&amp;#xE1;rio)&lt;/p>
-&lt;/td>
+&lt;td>rit create formula&lt;/td>
+&lt;td>cria uma nova fórmula do zero (como também um novo repositório local, se necessário)&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:left">rit build formula&lt;/td>
-&lt;td style="text-align:left">compila uma f&amp;#xF3;rmula localmente para teste&lt;/td>
+&lt;td>rit build formula&lt;/td>
+&lt;td>compila uma fórmula localmente para teste&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:left">rit build formula --watch&lt;/td>
-&lt;td style="text-align:left">Compila uma f&amp;#xF3;rmula para teste, monitorando atualiza&amp;#xE7;&amp;#xF5;es
-do c&amp;#xF3;digo no tempo real&lt;/td>
+&lt;td>rit build formula --watch&lt;/td>
+&lt;td>Compila uma fórmula para teste, monitorando atualizações do código no tempo real&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rit rename formula&lt;/td>
+&lt;td>Renomeia uma fórmula local&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -162,7 +162,7 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="comandos-de-workspaces-a-idworkspace-commandsa">Comandos de Workspaces &lt;a id="workspace-commands">&lt;/a>&lt;/h3>
+&lt;h3 id="comandos-de-workspaces">Comandos de Workspaces&lt;/h3>
 &lt;table>
 &lt;thead>
 &lt;tr>
