@@ -278,11 +278,16 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &lt;p>Essas entradas são feitas para os seguintes campos:&lt;/p>
 &lt;ul>
 &lt;li>Uma &lt;strong>imagem para buildar o docker&lt;/strong> (de acordo com a linguagem de programação escolhida para criar a fórmula)&lt;/li>
-&lt;li>A lista com os parâmetros de entrada de uma fórmula.&lt;/li>
+&lt;li>A lista com os parâmetros de entrada de uma fórmula.
+&lt;ul>
+&lt;li>O &lt;strong>require latest version&lt;/strong> é um parâmetro booleano que indica a necessidade (ou não) da fórmula ser executada na última versão do repositório.&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
 &amp;#34;dockerImageBuilder&amp;#34;: &amp;#34;dockerImage&amp;#34;,
-&amp;#34;inputs&amp;#34;: []
+&amp;#34;inputs&amp;#34;: [],
+&amp;#34;requireLatestVersion&amp;#34;: false,
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="configuração-dos-parâmetros-de-entrada">Configuração dos parâmetros de entrada&lt;/h2>
 &lt;p>Cada parâmetro de entrada é composto pelos seguintes campos:&lt;/p>
@@ -296,7 +301,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &lt;/div>
 &lt;blockquote>
 &lt;p>Uma boa prática é adicionar o sufixo &lt;strong>_&lt;code>RIT_&lt;/code>&lt;/strong> para cada &lt;strong>&lt;code>input name&lt;/code>&lt;/strong> para evitar conflitos com variáveis locais.&lt;/p>
-&lt;p>Exemplo_: &lt;code>rit_file_name&lt;/code> &amp;ndash;&amp;gt; &lt;code>RIT_FILE_NAME&lt;/code>_&lt;/p>
+&lt;p>Exemplo*: &lt;code>rit_file_name&lt;/code> &amp;ndash;&amp;gt; &lt;code>RIT_FILE_NAME&lt;/code>*&lt;/p>
 &lt;/blockquote>
 &lt;ul>
 &lt;li>&lt;code>type&lt;/code>:
@@ -342,7 +347,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &lt;p>As opções selecionadas no campo do tipo &lt;code>multiselect&lt;/code> irão retornar uma string com as opções separadas por barra (&lt;code>|&lt;/code>) e sem espaço, por exemplo: &lt;code>Monday | Wednesday | Friday&lt;/code>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>É sugerido que você use o campo &lt;code>obrigatório&lt;/code> como&lt;code>true&lt;/code>, caso contrário, se não houver uma opção selecionada, a variável local será salva como &lt;code>undefined&lt;/code> .&lt;/p>
+&lt;p>É sugerido que você use o campo &lt;code>obrigatório&lt;/code> como &lt;code>true&lt;/code>, caso contrário, se não houver uma opção selecionada, a variável local será salva como &lt;code>undefined&lt;/code> .&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h4 id="exemplo-de-parâmetro-de-entrada-usando-o-tipo-autocomplete">Exemplo de parâmetro de entrada usando o tipo autocomplete:&lt;/h4>
@@ -353,7 +358,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="campos-opcionais">Campos opcionais&lt;/h3>
 &lt;ul>
-&lt;li>&lt;code>default&lt;/code>: valor padrão do parâmetro (se nulo).&lt;/li>
+&lt;li>&lt;code>default&lt;/code>: Valor padrão do parâmetro (se nulo).&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
 &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
@@ -367,7 +372,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &lt;p>Caso não haja campos com valor default, a flag continuará solicitando os parâmetros de entrada que devem ser configurados no seu arquivo config.json.&lt;/p>
 &lt;/div>
 &lt;ul>
-&lt;li>&lt;code>required&lt;/code>: boolean que indica se um campo é obrigatório ou opcional.&lt;/li>
+&lt;li>&lt;code>required&lt;/code>: Boolean que indica se um campo é obrigatório ou opcional.&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
 &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
@@ -376,7 +381,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &amp;#34;required&amp;#34;: true
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>tutorial&lt;/code>: campo de ajuda para o parâmetro de entrada &lt;em>[? for help]&lt;/em>&lt;/li>
+&lt;li>&lt;code>tutorial&lt;/code>: Campo de ajuda para o parâmetro de entrada &lt;em>[? for help]&lt;/em>&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
 &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
@@ -385,7 +390,7 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 &amp;#34;tutorial&amp;#34;: &amp;#34;We are expecting you to write your name (ex: John)&amp;#34;
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>items&lt;/code>: lista de opções para o parâmetro.&lt;/li>
+&lt;li>&lt;code>items&lt;/code>: Lista de opções para o parâmetro.&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
 &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
@@ -398,11 +403,11 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 ]
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>cache&lt;/code>: salva valores de parâmetros de entrada anteriores.
+&lt;li>&lt;code>cache&lt;/code>: Salva os valores de parâmetros de entrada anteriores.
 &lt;ul>
-&lt;li>&lt;code>active&lt;/code>: se o cache é habilitado ou não.&lt;/li>
-&lt;li>&lt;code>qty&lt;/code>: quantidade de valor armazenadas no cache.&lt;/li>
-&lt;li>&lt;code>newLabel&lt;/code>: texto que aparecerá no CLI para pedir um novo input ao usuário.&lt;/li>
+&lt;li>&lt;code>active&lt;/code>: Se o cache é habilitado ou não.&lt;/li>
+&lt;li>&lt;code>qty&lt;/code>: A quantidade de valor armazenada no cache.&lt;/li>
+&lt;li>&lt;code>newLabel&lt;/code>: Texto que aparece no CLI para pedir um novo input ao usuário.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -418,11 +423,11 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>
-&lt;p>&lt;code>condition&lt;/code>: esse parâmetro só aparece se condicional funcionar.&lt;/p>
+&lt;p>&lt;code>condition&lt;/code>: Esse parâmetro só aparece se a condicional funcionar.&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>variable&lt;/code>: o nome da variável usada em um parâmetro anterior para comparação.&lt;/li>
-&lt;li>&lt;code>operator&lt;/code>: o operador lógico usado para comparar. Suporta &lt;code>==&lt;/code>, &lt;code>!=&lt;/code>, &lt;code>&amp;lt;&lt;/code>, &lt;code>&amp;gt;&lt;/code>, &lt;code>&amp;lt;=&lt;/code>, and &lt;code>&amp;gt;=&lt;/code>&lt;/li>
-&lt;li>&lt;code>value&lt;/code>: o valor que se deseja usar para comparação.&lt;/li>
+&lt;li>&lt;code>variable&lt;/code>: O nome da variável usada em um parâmetro anterior para comparação.&lt;/li>
+&lt;li>&lt;code>operator&lt;/code>: O operador lógico usado para comparar. Suporta &lt;code>==&lt;/code>, &lt;code>!=&lt;/code>, &lt;code>&amp;lt;&lt;/code>, &lt;code>&amp;gt;&lt;/code>, &lt;code>&amp;lt;=&lt;/code>, and &lt;code>&amp;gt;=&lt;/code>&lt;/li>
+&lt;li>&lt;code>value&lt;/code>: O valor que você deseja usar para comparação.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -444,10 +449,10 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>
-&lt;p>&lt;code>pattern&lt;/code>: configura a validação de um parâmetro de entrada.&lt;/p>
+&lt;p>&lt;code>pattern&lt;/code>: Configura a validação de um parâmetro de entrada.&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>regex&lt;/code>: o modelo regex para validar o parâmetro.&lt;/li>
-&lt;li>&lt;code>mismatchText&lt;/code>: a mensagem de erro caso o parâmetro de entrada seja invalidado pelo regex.&lt;/li>
+&lt;li>&lt;code>regex&lt;/code>: O modelo regex para validar o parâmetro.&lt;/li>
+&lt;li>&lt;code>mismatchText&lt;/code>: A mensagem de erro se o parâmetro de entrada seja invalidado pelo regex.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -466,10 +471,10 @@ O tipo de &lt;strong>&lt;code>entrada dinâmico&lt;/code>&lt;/strong> será &lt;
 &lt;/div>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;code>requestInfo&lt;/code>: configuração para ter o parâmetro de entrada de tipo dinâmico.&lt;/p>
+&lt;p>&lt;code>requestInfo&lt;/code>: Configuração para ter o parâmetro de entrada do tipo dinâmico.&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>url&lt;/code>: URL que consome o serviço GET, responsável por retornar a lista de objetos.&lt;/li>
-&lt;li>&lt;code>jsonPath&lt;/code>: caminho da variável para extrair da lista retornada uma variável de cada objeto. (Veja mais sobre &lt;a href="https://goessner.net/articles/JsonPath/">&lt;strong>como funciona esse path json&lt;/strong>&lt;/a>).&lt;/li>
+&lt;li>&lt;code>url&lt;/code>: Uma URL que consome o serviço GET e é responsável por retornar a lista de objetos.&lt;/li>
+&lt;li>&lt;code>jsonPath&lt;/code>: O caminho da variável para extrair da lista retornada uma variável de cada objeto. Exemplo: &lt;code>&amp;quot;jsonPath&amp;quot;: $['user']['name']&lt;/code> (Veja mais sobre &lt;a href="https://goessner.net/articles/JsonPath/">&lt;strong>como funciona esse path json&lt;/strong>&lt;/a>).&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>

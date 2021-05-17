@@ -274,10 +274,12 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &lt;ul>
 &lt;li>a &lt;strong>&lt;code>docker image builder&lt;/code>&lt;/strong> (according to the programming language chose at the formula creation)&lt;/li>
 &lt;li>the formula &lt;strong>&lt;code>inputs parameters list&lt;/code>&lt;/strong>.&lt;/li>
+&lt;li>a &lt;strong>&lt;code>require latest version&lt;/code>&lt;/strong> boolean, indicating the need (or not) of the formula to run in the last available version of a repository.&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
 &amp;#34;dockerImageBuilder&amp;#34;: &amp;#34;dockerImage&amp;#34;,
-&amp;#34;inputs&amp;#34;: []
+&amp;#34;inputs&amp;#34;: [],
+&amp;#34;requireLatestVersion&amp;#34;: false,
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="input-parameter-configuration">Input parameter configuration&lt;/h2>
 &lt;p>Each input parameter is composed of the following fields:&lt;/p>
@@ -291,7 +293,7 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &lt;/div>
 &lt;blockquote>
 &lt;p>A good practice is to add a &lt;strong>_&lt;code>RIT_&lt;/code>&lt;/strong> suffix to each &lt;strong>&lt;code>input name&lt;/code>&lt;/strong> to avoid having conflicts with local variables.&lt;/p>
-&lt;p>Example_: &lt;code>rit_file_name&lt;/code> &amp;ndash;&amp;gt; &lt;code>RIT_FILE_NAME&lt;/code>_&lt;/p>
+&lt;p>Example*: &lt;code>rit_file_name&lt;/code> &amp;ndash;&amp;gt; &lt;code>RIT_FILE_NAME&lt;/code>*&lt;/p>
 &lt;/blockquote>
 &lt;ul>
 &lt;li>&lt;code>type&lt;/code>:
@@ -299,7 +301,7 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &lt;li>&lt;strong>text&lt;/strong> (string),&lt;/li>
 &lt;li>&lt;strong>bool&lt;/strong> (boolean),&lt;/li>
 &lt;li>&lt;strong>password&lt;/strong> (hidden string on CLI),&lt;/li>
-&lt;li>&lt;strong>credentials&lt;/strong> (specific type, learn more information_ &lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/credentials/use-credentials-as-formula-inputs/">&lt;em>&lt;strong>here&lt;/strong>&lt;/em>&lt;/a>_),&lt;/li>
+&lt;li>&lt;strong>credentials** (specific type, learn more information* &lt;/strong>*here**_&lt;a href="https://zupit.github.io/docs-ritchie/docs-ritchie/credentials/use-credentials-as-formula-inputs/">&lt;/a>_),&lt;/li>
 &lt;li>&lt;strong>dynamic&lt;/strong> &lt;em>(associated with the optional &lt;code>request_info&lt;/code> field below),&lt;/em>&lt;/li>
 &lt;li>&lt;strong>path:&lt;/strong> enables the autocomplete to inform a path to a folder or a file (string).&lt;/li>
 &lt;/ul>
@@ -393,11 +395,11 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 ]
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>cache&lt;/code>: saves former input values.
+&lt;li>&lt;code>cache&lt;/code>: Saves former input values.
 &lt;ul>
-&lt;li>&lt;code>active&lt;/code>: if cache is enabled or not.&lt;/li>
-&lt;li>&lt;code>qty&lt;/code>: amount of values to store.&lt;/li>
-&lt;li>&lt;code>newLabel&lt;/code>: text appearing on the CLI asking for a new input.&lt;/li>
+&lt;li>&lt;code>active&lt;/code>: If the cache is enabled or not.&lt;/li>
+&lt;li>&lt;code>qty&lt;/code>: Amount of values to store.&lt;/li>
+&lt;li>&lt;code>newLabel&lt;/code>: Text appearing on the CLI asking for new input.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -412,7 +414,7 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 }
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>condition&lt;/code>: shows this input if the given condition succeeds
+&lt;li>&lt;code>condition&lt;/code>: It shows an input if the given condition succeeds.
 &lt;ul>
 &lt;li>&lt;code>variable&lt;/code>: The variable name used on a previous input for comparison.&lt;/li>
 &lt;li>&lt;code>operator&lt;/code>: A logical operator to compare. Supports &lt;strong>&lt;code>==&lt;/code>&lt;/strong>, &lt;strong>&lt;code>!=&lt;/code>&lt;/strong>, &lt;strong>&lt;code>&amp;lt;&lt;/code>&lt;/strong>, &lt;strong>&lt;code>&amp;gt;&lt;/code>&lt;/strong>, &lt;strong>&lt;code>&amp;lt;=&lt;/code>&lt;/strong>, and &lt;strong>&lt;code>&amp;gt;=&lt;/code>.&lt;/strong>&lt;/li>
@@ -437,10 +439,10 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>pattern&lt;/code>: configure an input value validation.
+&lt;li>&lt;code>pattern&lt;/code>: Configure the input value validation.
 &lt;ul>
 &lt;li>&lt;code>regex&lt;/code>: The regex pattern to validate the input.&lt;/li>
-&lt;li>&lt;code>mismatchText&lt;/code>: error message when input doesn&amp;rsquo;t match the regex pattern&lt;/li>
+&lt;li>&lt;code>mismatchText&lt;/code>: An error message when the input doesn&amp;rsquo;t match the regex pattern.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -458,10 +460,10 @@ The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated t
 The &lt;strong>&lt;code>dynamic input&lt;/code>&lt;/strong> type will be &lt;strong>depreciated&lt;/strong> in the &lt;strong>next releases&lt;/strong>.
 &lt;/div>
 &lt;ul>
-&lt;li>&lt;code>requestInfo&lt;/code>: configuration to get dynamic input type.
+&lt;li>&lt;code>requestInfo&lt;/code>: A configuration to get the dynamic input type.
 &lt;ul>
-&lt;li>&lt;code>url&lt;/code>: URL to consume a GET service that will return a list of objects.&lt;/li>
-&lt;li>&lt;code>jsonPath&lt;/code>: path to the variable to extract from the returned list, for each object. (Check out &lt;a href="https://goessner.net/articles/JsonPath/">&lt;strong>how works the json path&lt;/strong>&lt;/a>).&lt;/li>
+&lt;li>&lt;code>url&lt;/code>: An URL to consume a GET service that will return a list of objects.&lt;/li>
+&lt;li>&lt;code>jsonPath&lt;/code>: A JSON path where the variable extracts a returned list for every object, see &lt;code>&amp;quot;jsonPath&amp;quot;: $['user']['name']&lt;/code> (Check out &lt;a href="https://goessner.net/articles/JsonPath/">&lt;strong>how the JSON path works&lt;/strong>&lt;/a>).&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
