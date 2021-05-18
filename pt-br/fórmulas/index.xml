@@ -857,7 +857,32 @@ xcode Manage xcode objects
 &lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
 &lt;li>Se preferir, execute o comando &lt;strong>&lt;code>rit list repo&lt;/code>&lt;/strong>, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.&lt;/li>
 &lt;/ol>
-&lt;h3 id="como-atualizo">Como atualizo?&lt;/h3>
+&lt;h3 id="como-encontrar-formulas-de-um-repositório">Como encontrar formulas de um repositório?&lt;/h3>
+&lt;div class="alert alert-info" role="alert">
+Essa feature está disponível a partir da versão 2.11 do Ritchie.
+&lt;/div>
+&lt;p>Quando você trabalha com vários grupos de fórmulas, pode ser difícil lembrar de cada comando disponível.&lt;/p>
+&lt;p>Se você quiser listar as fórmulas de um repositório específico, siga os passos abaixo:&lt;/p>
+&lt;ol>
+&lt;li>Execute o comando de lista &lt;strong>&lt;code>rit list formula&lt;/code>&lt;/strong>. O sistema deve retornar a lista com o grupo de repositórios diponíveis e também a opção &amp;lsquo;&lt;strong>ALL&lt;/strong>&amp;rsquo;.&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">? Repository:
+ALL
+&amp;gt; repo-name-1
+repo-name-2
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Selecione o repositório que você deseja (ou ALL para todos) e o sistema retorna uma lista com os comandos e uma breve descrição que foi definida no arquivo &lt;strong>&lt;code>help.json&lt;/code>&lt;/strong> de cada fórmula.&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">? Repository: repo-name-1
+COMMAND DESCRIPTION
+rit aws add terraform-eks Generate terraform AWS eks
+rit aws add terraform-vpc Generate terraform AWS vpc
+rit aws apply terraform Apply terraform on AWS
+rit aws clean bucket Clean bucket AWS
+rit aws create bucket Create bucket AWS
+rit aws delete bucket Delete AWS objects
+There are 6 formulas
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="como-atualizo">Como atualizo?&lt;/h3>
 &lt;p>Para atualizar a versão de algum repositório local, você só precisa rodar o comando abaixo informando o nome do repositório e a versão desejada.&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit update repo
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>

@@ -84,6 +84,10 @@
 &lt;td>rit rename formula&lt;/td>
 &lt;td>rename a local formula&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit list formula&lt;/td>
+&lt;td style="text-align:left">list all available formulas from specific/all repositories&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;div class="alert alert-danger" role="alert">

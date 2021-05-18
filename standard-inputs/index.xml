@@ -26,7 +26,14 @@ This flags are supported since Ritchie&amp;rsquo;s 2.8 release.
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>rit delete env&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit delete env --env=prod
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="formula-commands">Formula commands&lt;/h3>
-&lt;p>rit rename formula&lt;/p>
+&lt;p>rit list formula&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit list formula --name=repo_name
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-info" role="alert">
+If you need to list formulas from every repository you have added, use the flag &amp;lsquo;ALL&amp;rsquo;.
+&lt;/div>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit list formula --name=ALL
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>rit rename formula&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit rename formula --oldName=&amp;#39;rit group old&amp;#39; --newName=&amp;#39;rit group new&amp;#39;
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="alert alert-info" role="alert">

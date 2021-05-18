@@ -77,8 +77,13 @@
 &lt;td>compila uma fórmula localmente para teste&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>rit build formula --watch&lt;/td>
-&lt;td>Compila uma fórmula para teste, monitorando atualizações do código no tempo real&lt;/td>
+&lt;td style="text-align:left">rit build formula --watch&lt;/td>
+&lt;td style="text-align:left">compila uma f&amp;#xF3;rmula para teste, monitorando atualiza&amp;#xE7;&amp;#xF5;es
+do c&amp;#xF3;digo no tempo real&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit list formula&lt;/td>
+&lt;td style="text-align:left">lista todas as fórmulas disponíveis em um/todos repositórios&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>rit rename formula&lt;/td>
